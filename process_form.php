@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 $dbname = "house";
 
-// Create a connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check the connection
