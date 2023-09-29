@@ -19,8 +19,8 @@
     <?php include 'include/header.php'; ?>
 
     <!-- Banner Start -->
-    <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('assets/img/hero.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-        <div class="container h-100">
+    <div id="banner" class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('assets/img/hosuek1.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">  
+   <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-12">
                     <div class="text-white">
@@ -109,7 +109,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.3);
             z-index: 1;
         }
     </style>
@@ -148,5 +147,22 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.sticky.js"></script>
+<script>
+    const banner = document.getElementById('banner');
+    const images = ['assets/img/Kenyan-House-2.webp', 'assets/img/hero.jpg', 'assets/img/maxresdefault.jpg'];
+    let currentIndex = 1;  
 
+    function changeBackgroundImage() {
+        banner.style.backgroundImage = `url('${images[currentIndex]}')`;
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+
+   
+    setInterval(changeBackgroundImage, 5000);
+
+   
+    window.addEventListener('load', () => {
+        banner.style.backgroundImage = `url('${images[0]}')`;
+    });
+</script>  
 </html>
