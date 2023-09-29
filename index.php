@@ -2,15 +2,15 @@
 <html>
 <head>
 
-     <link href="assets\img\logo.png" rel="icon">
+<link href="assets/img/Real Estate Logo.png" rel="icon">
      <link rel="stylesheet" href="assets/style/homepage.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="about-us">HOME</a></li>
-                <li><a href="know-us,php">ABOUT</a></li>
+                <li><a href="about-us.php">HOME</a></li>
+                <li><a href="know-us.php">ABOUT</a></li>
                 <li><a href="our-services.php">SERVICES</a></li>
                 <li><a href="contact-us.php">CONTACTS</a></li>
                 <li><a href="invest.php">INVESTORS</a></li>
@@ -21,7 +21,7 @@
         <hr>
     </header>
     <section>
-        <h1>HOME PAGE</h1>
+        <h2>HOME PAGE</h2>
         <p>This website aims to revolutionize the process of finding and selecting houses;
             it will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
             and offer different features designed to enhance user experience and facilitate informed decision making.<br>
