@@ -23,7 +23,7 @@
                 <table style="height: 100vh; width: 100%">
                     <tr>
                         <td class="container-fluid">
-                            <h3 class="form-signin-heading" style="color: #12aa1f; font-size: 1.7em">Sign Up</h3>
+                            <h3 class="form-signin-heading" style="color: purple; font-size: 1.7em">Sign Up</h3>
                             <p style="margin-bottom: 25px;" class="text-muted">Kindly create an account to access House Hunt Management services.</p>
                             <form action="process_form.php" id="register_form" method="post" accept-charset="utf-8">
                                 <div class="row">
@@ -75,7 +75,7 @@
                 </table>
             </div>
             <div class="col-md-4 col-lg-4" style="height: 100vh; margin: 0px; background-size: cover; background-position: center;display: flex; align-items: center; justify-content: center;">
-                <div style="background: #12aa1f; height: 100%; width: 100%; left : 0; opacity : .9"></div>
+                <div style="background: grey; height: 100%; width: 100%; left : 0; opacity : .9"></div>
                 <div class="" style="position: absolute; z-index: 999; width: 300px;color: white;">
                     <h1>House Portal</h1>
                     <p class='' style="margin-bottom: 4px">Your platform for selling houses</p>

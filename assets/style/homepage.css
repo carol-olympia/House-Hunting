@@ -1,0 +1,39 @@
+header {
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+ }
+
+ h1 {
+    font-size: 36px;
+    color: blueviolet;
+ }
+ body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('royalstar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: beige;
+    color: black;
+}
+
+nav ul li {
+display: inline;
+margin-right: 20px;    
+text-align: left;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: aqua;
+    box-shadow: 0 0 10px rgba((0, 0, 0, 0.1), green, blue, alpha);
+}
+
+footer {
+    background-color: black;
+    color: blueviolet;
+    text-align: center;
+    padding: 10px;
+}
