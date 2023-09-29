@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+<<<<<<< HEAD
+<link href="assets/img/Real Estate Logo.png" rel="icon">
+     <link rel="stylesheet" href="assets/style/homepage.css">
+=======
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -13,9 +17,26 @@
     <link href="assets/css/house-hunt-header.css" rel="stylesheet">
 
     <link href="assets/css/homepage.css" rel="stylesheet">
+>>>>>>> 489ac3607e36ec8c528958ae94215ffe03561689
 </head>
 
 <body>
+<<<<<<< HEAD
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about-us.php">HOME</a></li>
+                <li><a href="know-us.php">ABOUT</a></li>
+                <li><a href="our-services.php">SERVICES</a></li>
+                <li><a href="contact-us.php">CONTACTS</a></li>
+                <li><a href="invest.php">INVESTORS</a></li>
+                <li><a href="pricing.php">PRICING</a></li>
+                <li><a href="sign-up.php">GET STARTED</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+=======
     <?php include 'include/header.php'; ?>
 
     <!-- Banner Start -->
@@ -118,8 +139,9 @@
         }
     </style>
 
+>>>>>>> 489ac3607e36ec8c528958ae94215ffe03561689
     <section>
-        <h1>HOME PAGE</h1>
+        <h2>HOME PAGE</h2>
         <p>This website aims to revolutionize the process of finding and selecting houses;
             it will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
             and offer different features designed to enhance user experience and facilitate informed decision making.<br>
