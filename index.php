@@ -118,7 +118,12 @@
         }
     </style><br
 
+<<<<<<< HEAD
     <p style="color: white; font-size: 20px; text-align: center;"></p>
+=======
+    <section>
+        <h1>HOME PAGE</h1>
+>>>>>>> ff46f3c2273765b16169371b3376849a263412fc
         <p>This website aims to revolutionize the process of finding and selecting houses;
             it will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
             and offer different features designed to enhance user experience and facilitate informed decision making.</p>
@@ -127,6 +132,27 @@
             By leveraging advanced technologies, data-driven insights and useful friendly features, the website will empower individuals to find their dream homes efficiently and confidentially.
         </p>
     </section>
+<<<<<<< HEAD
+=======
+    <section>
+        <h3>SERVICES</h3>
+        <p>Our services include:</p>
+        <ul>
+            <li>Property Management</li>
+            <li>Property Valuation</li>
+            <li>Property Sales</li>
+            <li>Property Letting</li>
+            <li>Property Development</li>
+            <li>Property Consultancy</li>
+        </ul>
+    </section>
+    <footer>
+        <h4>FIND US</h4>
+        <li>WhatsApp - <a href="tel:+254723464616" style="text-decoration: none;">0723464616</a></li>
+        <li>Instagram - <a href="https://www.instagram.com/cosyhomes/" target="_blank" style="text-decoration:none;">@cosyhomes</a></li>
+        </ul>
+    </footer>
+>>>>>>> ff46f3c2273765b16169371b3376849a263412fc
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -141,9 +167,7 @@
         currentIndex = (currentIndex + 1) % images.length;
     }
 
-
     setInterval(changeBackgroundImage, 5000);
-
 
     window.addEventListener('load', () => {
         banner.style.backgroundImage = `url('${images[0]}')`;

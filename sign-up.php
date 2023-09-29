@@ -35,18 +35,14 @@
                                 margin: 0;
                                 list-style: none;
                             }
-
-
                             .breadcrumb-item.active {
                                 font-weight: bold;
                                 font-size: 30px;
                             }
-
                             .breadcrumb-item::before {
                                 content: none;
                                 font-size: 30px;
                             }
-
                             .breadcrumb-item a {
                                 font-size: 30px;
                                 text-decoration: none;
