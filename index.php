@@ -162,9 +162,7 @@
         currentIndex = (currentIndex + 1) % images.length;
     }
 
-
     setInterval(changeBackgroundImage, 5000);
-
 
     window.addEventListener('load', () => {
         banner.style.backgroundImage = `url('${images[0]}')`;
