@@ -10,15 +10,14 @@
 
     <link rel="stylesheet" href="assets/css/toastr.min.css">
 
-<<<<<<< HEAD
+
         <link rel="stylesheet" href="assets/style/intlTelinput.min.css">
         
-=======
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="assets/css/intlTelinput.min.css">
 
->>>>>>> 489ac3607e36ec8c528958ae94215ffe03561689
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>

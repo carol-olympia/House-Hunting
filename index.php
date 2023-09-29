@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<<<<<<< HEAD
-<link href="assets/img/Real Estate Logo.png" rel="icon">
-     <link rel="stylesheet" href="assets/style/homepage.css">
-=======
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -17,26 +13,9 @@
     <link href="assets/css/house-hunt-header.css" rel="stylesheet">
 
     <link href="assets/css/homepage.css" rel="stylesheet">
->>>>>>> 489ac3607e36ec8c528958ae94215ffe03561689
 </head>
 
 <body>
-<<<<<<< HEAD
-    <header>
-        <nav>
-            <ul>
-                <li><a href="about-us.php">HOME</a></li>
-                <li><a href="know-us.php">ABOUT</a></li>
-                <li><a href="our-services.php">SERVICES</a></li>
-                <li><a href="contact-us.php">CONTACTS</a></li>
-                <li><a href="invest.php">INVESTORS</a></li>
-                <li><a href="pricing.php">PRICING</a></li>
-                <li><a href="sign-up.php">GET STARTED</a></li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
-=======
     <?php include 'include/header.php'; ?>
 
     <!-- Banner Start -->
@@ -45,7 +24,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-lg-12">
                     <div class="text-white">
-                        <h1 style="color: blue;" class="mb-4"><span class="text-success" style="color: white!important;">Let us</span><br>
+                        <h1 style="color: red;" class="mb-4"><span class="text-success" style="color: white!important;">Let us</span><br>
                             Guide you Home</h1>
                         <form method="post" action="property-search.php">
                             <div class="row">
@@ -137,39 +116,17 @@
 
             transition: background-image 0.5s ease-in-out;
         }
-    </style>
+    </style><br
 
->>>>>>> 489ac3607e36ec8c528958ae94215ffe03561689
-    <section>
-        <h2>HOME PAGE</h2>
+    <p style="color: white; font-size: 20px; text-align: center;"></p>
         <p>This website aims to revolutionize the process of finding and selecting houses;
             it will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
-            and offer different features designed to enhance user experience and facilitate informed decision making.<br>
+            and offer different features designed to enhance user experience and facilitate informed decision making.</p>
             One will be able to create personalized profiles allowing You to save preferences, track favorite properties and receive tailored recommendation based on your specific requirements.</p>
         <p>A search engine will be incorporated to enable everyone to search based on location, price, property features, neighborhood information and other necessities; the website will also facilitate communication between users and real estate agents and landlords/property owners with maximum authenticity allowing face locks and high password configuration.<br>
             By leveraging advanced technologies, data-driven insights and useful friendly features, the website will empower individuals to find their dream homes efficiently and confidentially.
         </p>
-        <h3>ABOUT</h3>
     </section>
-    <section>
-        <h3>SERVICES</h3>
-        <p>Our services include:</p>
-        <ul>
-            <li>Property Management</li>
-            <li>Property Valuation</li>
-            <li>Property Sales</li>
-            <li>Property Letting</li>
-            <li>Property Development</li>
-            <li>Property Consultancy</li>
-        </ul>
-
-    </section>
-    <footer>
-        <h4>FIND US</h4>
-        <li>WhatsApp - <a href="tel:+254723464616" style="text-decoration: none;">0723464616</a></li>
-        <li>Instagram - <a href="https://www.instagram.com/cosyhomes/" target="_blank" style="text-decoration:none;">@cosyhomes</a></li>
-        </ul>
-    </footer>
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -192,5 +149,7 @@
         banner.style.backgroundImage = `url('${images[0]}')`;
     });
 </script>
-
+<footer>
+    <p>&copy; 2023 COSY HOMES</p>
+</footer>
 </html>

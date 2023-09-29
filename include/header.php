@@ -63,32 +63,44 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="index.php">Home</a>
+                    <a class="nav-link custom-btn custom-border-btn btn" href="home.php" style="background-color: green;margin-top:10px; color: white; border-radius: 20px; padding: 10px 20px; text-decoration: none; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='green'">
+                         HOME
+                    </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_About">About</a>
+                    <a class="nav-link custom-btn custom-border-btn btn" href="about.php" style="background-color: green;margin-top:10px; color: white; border-radius: 20px; padding: 10px 5px; text-decoration: none; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='green'">
+                            ABOUT US
+                    </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_Services">Services</a>
+                    <a class="nav-link custom-btn custom-border-btn btn" href="service.php" style="background-color: green;margin-top:10px; color: white; border-radius: 20px; padding: 10px 5px; text-decoration: none; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='green'">
+                            SERVICES
+                    </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_Contact">Contact-Us</a>
+                    <a class="nav-link custom-btn custom-border-btn btn" href="contact us.php" style="background-color: green;margin-top:10px; color: white; border-radius: 20px; padding: 10px 5px; text-decoration: none; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='green'">
+                            CONTACT US
+                    </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_Investors">Investors</a>
+                    <a class="nav-link custom-btn custom-border-btn btn" href="investors.php" style="background-color: green;margin-top:10px; color: white; border-radius: 20px; padding: 10px 5px; text-decoration: none; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='green'">
+                            INVESTORS
+                    </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_Pricin">Pricing</a>
+                    <a class="nav-link custom-btn custom-border-btn btn" href="pricing.php" style="background-color: green;margin-top:10px; color: white; border-radius: 20px; padding: 10px 5px; text-decoration: none; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='green'">
+                           PRICING
+                    </a>
                     </li>
 
                     <li class="nav-item ms-3">
                         <a class="nav-link custom-btn custom-border-btn btn" href="sign-up.php" style="background-color: blueviolet;margin-top:10px; color: white; border-radius: 30px; padding: 10px 20px; text-decoration: none; display: inline-block; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='blueviolet'">
-                            Get Started
+                            SIGN UP
                         </a>
                     </li>
 

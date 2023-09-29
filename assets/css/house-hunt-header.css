@@ -263,3 +263,12 @@
   color: var(--white-color);
 }
 
+/*---------------------------------------
+  HOME PAGE
+-----------------------------------------*/
+.home-page {
+  background: var(--white-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
