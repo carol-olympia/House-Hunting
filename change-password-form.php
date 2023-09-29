@@ -3,11 +3,11 @@
 
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="assets/style/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
-        <link rel="stylesheet" href="assets/style/toastr.min.css">
+        <link rel="stylesheet" href="assets/css/toastr.min.css">
 
-        <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
@@ -23,7 +23,7 @@
                     <tr>
                         <td class="container-fluid" id="formContainer">
                             <form id="changePasswordForm" method="post" action="handle-password-change.php">
-                                <h3 class="form-signin-heading" style="color: #12aa1f; font-size: 1.7em">Change Password</h3>
+                                <h3 class="form-signin-heading" style="color: blueviolet; font-size: 1.7em">Change Password</h3>
                                 <p style="margin-bottom: 25px; font-size: 14.5px" class="text-muted">Enter your new password.</p>
                                 <div class="form-group">
                                     <label for="password" class="form-label">New Password</label>
@@ -35,7 +35,7 @@
                                 </div>
                                 <input type="hidden" name="email" value="<?php echo $_GET['email']; ?>">
                                 <div class="d-grid">
-                                    <button class="btn btn-block btn-purple" id="changePasswordButton" style="margin-top:1em;background-color:#12aa1f;color:white;" type="submit">RESET PASSWORD</button>
+                                    <button class="btn btn-block btn-purple" id="changePasswordButton" style="margin-top:1em;background-color:blueviolet;color:white;" type="submit">RESET PASSWORD</button>
                                 </div>
                             </form>
                         </td>
@@ -43,7 +43,7 @@
                 </table>
             </div>
             <div class="col-md-6" style="height: 100vh; margin: 0px;background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
-                <div style="background: #12aa1f; height: 100%; width: 100%; left : 0; opacity : .9;z-index: 1"></div>
+                <div style="background: grey; height: 100%; width: 100%; left : 0; opacity : .9;z-index: 1"></div>
                 <div class="" style="position: absolute; width: 300px;color: white; z-index: 10">
                     <h2>House Hunt Portal</h2>
                     <p class='' style="margin-bottom: 4px">Your platform for selling houses</p>
@@ -53,10 +53,9 @@
                 </div>
             </div>
             <style>
-                /* Set a purple outline on focus for all input elements */
                 input[type="text"]:focus,
                 input[type="password"]:focus {
-                    outline: 1px solid #12aa1f;
+                    outline: 1px solid blueviolet;
                 }
 
                 input[type="text"]:focus,

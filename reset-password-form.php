@@ -2,11 +2,11 @@
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="assets/style/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
-        <link rel="stylesheet" href="assets/style/toastr.min.css">
+        <link rel="stylesheet" href="assets/css/toastr.min.css">
 
-        <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
@@ -25,17 +25,16 @@
         }
         /* Set a purple outline on focus for all input elements */
         input[type="email"]:focus {
-            outline: 1px solid #12aa1f;
+            outline: 1px solid blueviolet;
         }
 
         input[type="email"]:focus {
             border: none !important;
             box-shadow: none !important;
         }
-        /* Set a purple outline on focus for all input elements */
         input[type="text"]:focus,
                 input[type="password"]:focus {
-                    outline: 1px solid #12aa1f;
+                    outline: 1px solid blueviolet;
                 }
 
                 input[type="text"]:focus,
@@ -51,14 +50,14 @@
                     <tr>
                         <td class="container-fluid" id="formContainer">
                         <form id="resetPasswordForm" method="post" action="check-email-reset.php">
-                                <h3 class="form-signin-heading" style="color: #12aa1f; font-size: 1.7em">Reset Password</h3>
+                                <h3 class="form-signin-heading" style="color: blueviolet; font-size: 1.7em">Reset Password</h3>
                                 <p style="margin-bottom: 25px; font-size: 14.5px" class="text-muted">Enter your email to reset your password.</p>
                                 <div class="form-group">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
                                 </div>
                                 <div class="d-grid">
-                                    <button class="btn btn-block btn-purple" id="resetPasswordButton" style="margin-top:1em;background-color:#12aa1f;color:white;" type="submit">CONTINUE</button>
+                                    <button class="btn btn-block btn-purple" id="resetPasswordButton" style="margin-top:1em;background-color:blueviolet;color:white;" type="submit">CONTINUE</button>
                                 </div>
                             </form>
                         </td>
@@ -66,7 +65,7 @@
                 </table>
             </div>
             <div class="col-md-6" style="height: 100vh; margin: 0px;background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
-                <div style="background: #12aa1f; height: 100%; width: 100%; left : 0; opacity : .9;z-index: 1"></div>
+                <div style="background: grey; height: 100%; width: 100%; left : 0; opacity : .9;z-index: 1"></div>
                 <div class="" style="position: absolute; width: 300px;color: white; z-index: 10">
                     <h2>House Hunt Portal</h2>
                     <p class='' style="margin-bottom: 4px">Your platform for selling houses</p>
