@@ -1,25 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
 
-     <link href="assets\img\logo.png" rel="icon">
-     <link rel="stylesheet" href="assets/style/homepage.css">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link href="assets/img/Real Estate Logo.png" rel="icon">
+    <!-- CSS FILES -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="icons/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="assets/css/house-hunt-header.css" rel="stylesheet">
+
+    <link href="assets/css/homepage.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="about-us">HOME</a></li>
-                <li><a href="know-us,php">ABOUT</a></li>
-                <li><a href="our-services.php">SERVICES</a></li>
-                <li><a href="contact-us.php">CONTACTS</a></li>
-                <li><a href="invest.php">INVESTORS</a></li>
-                <li><a href="pricing.php">PRICING</a></li>
-                <li><a href="sign-up.php">GET STARTED</a></li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
+    <?php include 'include/header.php'; ?>
+
+    <!--	Banner Start   -->
+    <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('assets/img/hero.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12">
+                    <div class="text-white">
+                        <h1 style="color: blue;" class="mb-4"><span class="text-success" style="color: white!important;">Let us</span><br>
+                            Guide you Home</h1>
+                        <form method="post" action="property-search.php">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-2">
+                                    <div class="form-group">
+                                        <select class="form-control" name="type">
+                                            <option value="">Select house Type</option>
+                                            <option value="apartment">Apartment</option>
+                                            <option value="flat">Flat</option>
+                                            <option value="building">Building</option>
+                                            <option value="house">House</option>
+                                            <option value="villa">Villa</option>
+                                            <option value="office">Office</option>
+                                        </select>
+                                        <i class="fas fa-caret-down"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-2">
+                                    <div class="form-group">
+                                        <select class="form-control" name="stype">
+                                            <option value="">Select Status</option>
+                                            <option value="rent">Rent</option>
+                                            <option value="sale">Sale</option>
+                                        </select>
+                                        <i class="fas fa-caret-down"></i>
+                                    </div>
+                                    <div class="col-md-8 col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="city" placeholder="Enter City" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-2">
+                                        <div class="form-group">
+                                            <button type="submit" name="filter" class="btn btn-success w-100">Search Property</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Slider Banner */
+        .slider-banner1 {
+            width: 100%;
+            height: 520px;
+            min-height: 400px;
+        }
+
+        .slider-banner1.overlay-black::before {
+            z-index: 0;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-group i {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: black;
+        }
+
+        .form-group select,
+        .form-group input {
+            width: calc(100%);
+            height: 50px;
+        }
+
+        .slider-banner1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+    </style>
     <section>
         <h1>HOME PAGE</h1>
         <p>This website aims to revolutionize the process of finding and selecting houses;
@@ -33,12 +123,26 @@
     </section>
     <section>
         <h3>SERVICES</h3>
+        <p>Our services include:</p>
+        <ul>
+            <li>Property Management</li>
+            <li>Property Valuation</li>
+            <li>Property Sales</li>
+            <li>Property Letting</li>
+            <li>Property Development</li>
+            <li>Property Consultancy</li>
+        </ul>
+
     </section>
     <footer>
         <h4>FIND US</h4>
-           <ul>WhatsApp - 0723464616</ul>
-           <ul> Instagram - cosyhomes</ul>
+        <li>WhatsApp - <a href="tel:+254723464616" style="text-decoration: none;">0723464616</a></li>
+        <li>Instagram - <a href="https://www.instagram.com/cosyhomes/" target="_blank" style="text-decoration:none;">@cosyhomes</a></li>
         </ul>
     </footer>
 </body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.sticky.js"></script>
+
 </html>
