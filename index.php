@@ -18,7 +18,7 @@
 <body>
     <?php include 'include/header.php'; ?>
 
-    <!--	Banner Start   -->
+    <!-- Banner Start -->
     <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('assets/img/hero.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -51,23 +51,26 @@
                                         </select>
                                         <i class="fas fa-caret-down"></i>
                                     </div>
-                                    <div class="col-md-8 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="city" placeholder="Enter City" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-lg-2">
-                                        <div class="form-group">
-                                            <button type="submit" name="filter" class="btn btn-success w-100">Search Property</button>
-                                        </div>
+                                </div>
+                                <div class="col-md-3 col-lg-4 offset-lg-1">
+                                    <div class="form-group position-relative">
+                                        <input type="text" class="form-control" name="city" placeholder="Enter City eg..Nairobi" required>
                                     </div>
                                 </div>
+                                <div style="width:200px;" class="col-md-6 col-lg-2">
+                                    <div class="form-group">
+                                        <button type="submit" name="filter" class="btn btn-success w-100">Search Property</button>
+                                        <i class="fas fa-search position-absolute" style="right: 10px;color:white; top: 50%; transform: translateY(-50%);"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <style>
         /* Slider Banner */
         .slider-banner1 {
@@ -110,6 +113,7 @@
             z-index: 1;
         }
     </style>
+
     <section>
         <h1>HOME PAGE</h1>
         <p>This website aims to revolutionize the process of finding and selecting houses;
