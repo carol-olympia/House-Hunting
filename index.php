@@ -288,7 +288,6 @@
         </div>
     </div>
 
-
     <!--	why choose us -->
     <p style="color: white; font-size: 20px; text-align: center;"></p>
     <p>This website aims to revolutionize the process of finding and selecting houses;
