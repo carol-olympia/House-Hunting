@@ -13,6 +13,9 @@
     <link href="assets/css/house-hunt-header.css" rel="stylesheet">
 
     <link href="assets/css/homepage.css" rel="stylesheet">
+
+    <link href="assets/css/belowheader.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,7 +27,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-lg-12">
                     <div class="text-white">
-                        <h1 style="color: red;" class="mb-4"><span class="text-success" style="color: white!important;">Let us</span><br>
+                        <h1 style="color: red;margin-top:200px;" class="mb-4"><span class="text-success" style="color: white!important;">Let us</span><br>
                             Guide you Home</h1>
                         <form method="post" action="property-search.php">
                             <div class="row">
@@ -57,7 +60,7 @@
                                         <input type="text" class="form-control" name="city" placeholder="Enter City eg..Nairobi" required>
                                     </div>
                                 </div>
-                                <div style="width:200px;" class="col-md-6 col-lg-2">
+                                <div style="width:200px;margin-top:5px" class="col-md-7 col-lg-1">
                                     <div class="form-group">
                                         <button type="submit" name="filter" class="btn btn-success w-100">Search Property</button>
                                         <i class="fas fa-search position-absolute" style="right: 10px;color:white; top: 50%; transform: translateY(-50%);"></i>
@@ -70,89 +73,233 @@
             </div>
         </div>
     </div>
+    <div class="full-row bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-secondary double-down-line text-center mb-5">What We Do </h2>
+                </div>
+            </div>
+            <div class="text-box-one">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s">
+                            <i class="fas fa-handshake text-success"></i>
+                            <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Selling Service</a></h5>
+                            <p>Our selling service is designed to help you sell your property with ease and efficiency. We provide expert guidance throughout the selling process, ensuring you get the best value for your property.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s">
+                            <i class="fas fa-home text-success"></i>
+                            <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Rental Service</a></h5>
+                            <p>Our rental service aims to simplify the process of finding and leasing a property. We have a wide range of rental options to suit your needs, and our team will assist you in finding the perfect rental.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s">
+                            <i class="fas fa-list text-success"></i>
+                            <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Property Listing</a></h5>
+                            <p>With our property listing service, we make it easy for property owners to showcase their properties to broad audience. We leverage effective marketing strategies to attract potentialy.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s">
+                            <i class="fas fa-chart-pie text-success"></i>
+                            <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Legal Investment</a></h5>
+                            <p>Legal investment is a critical aspect of property transactions. Our team of legal experts will guide you through the legal intricacies involved in property investment securing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--	Recent Properties  -->
+    <div class="full-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-secondary double-down-line text-center mb-4">Recent Property</h2>
+                </div>
+            </div>
 
-    <style>
-        /* Slider Banner */
-        .slider-banner1 {
-            width: 100%;
-            height: 520px;
-            min-height: 400px;
-        }
+            <div class="row">
+                <!-- Centered Column -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="featured-thumb hover-zoomer mb-4">
+                        <div class="overlay-black overflow-hidden position-relative">
+                            <img src="assets\img\h1.jpg" alt="pimage">
+                            <div style="background-color: blueviolet!important;" class="featured bg-success text-white">New</div>
+                            <div style="background-color: blueviolet!important;" class="sale bg-success text-white text-capitalize">For sale</div>
+                            <div style="z-index: 0;" class="price text-primary"><b style="color: yellow;">ksh2,500,000</b><span class="text-white">1869 Sqft</span></div>
+                        </div>
+                        <div class="featured-thumb-data shadow-one">
+                            <div class="p-3">
+                                <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php" style="text-decoration: none;">Fedha Estate</a></h5>
+                                <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> 39 Nairobi Fedha</span>
+                            </div>
+                            <div style="background-color: blueviolet;" class="bg-gray quantity px-4 pt-4">
+                                <ul>
+                                    <li><span>1869</span> Sqft</li>
+                                    <li><span>4</span> Beds</li>
+                                    <li><span>2</span> Baths</li>
+                                    <li><span>1</span> Kitchen</li>
+                                    <li><span>1</span> Balcony</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 d-inline-block w-100">
+                                <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : Declan Mark</div>
+                                <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> 22-10-2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        .slider-banner1.overlay-black::before {
-            z-index: 0;
-        }
+                <!-- New Center Column -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="featured-thumb hover-zoomer mb-4">
+                        <div class="overlay-black overflow-hidden position-relative">
+                            <img src="assets/img/Kenyan-House-2.webp" alt="pimage">
+                            <div style="background-color: blueviolet!important;" class="featured bg-success text-white">New</div>
+                            <div style="background-color: blueviolet!important;" class="sale bg-success text-white text-capitalize">For sale</div>
+                            <div style="z-index: 0;" class="price text-primary"><b style="color: yellow;">ksh910,000 </b><span class="text-white">1500 Sqft</span></div>
+                        </div>
+                        <div class="featured-thumb-data shadow-one">
+                            <div class="p-3">
+                                <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php" style="text-decoration: none;">Konza Street</a></h5>
+                                <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> 34 Konza City</span>
+                            </div>
+                            <div style="background-color: blueviolet;" class="bg-gray quantity px-4 pt-4">
+                                <ul>
+                                    <li><span>2500</span> Sqft</li>
+                                    <li><span>3</span> Beds</li>
+                                    <li><span>2</span> Baths</li>
+                                    <li><span>1</span> Kitchen</li>
+                                    <li><span>2</span> Balcony</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 d-inline-block w-100">
+                                <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : Caroline Eliana</div>
+                                <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> 12-10-2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        .form-group {
-            position: relative;
-        }
+                <!-- Right Column -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="featured-thumb hover-zoomer mb-4">
+                        <!-- Content for the right column -->
+                        <div class="overlay-black overflow-hidden position-relative">
+                            <img style="height: 200px;" src="assets/img/h.jpg" alt="pimage">
+                            <div style="background-color: blueviolet!important;" class="featured bg-success text-white">New</div>
+                            <div style="background-color: blueviolet!important;" class="sale bg-success text-white text-capitalize">For sale</div>
+                            <div style="z-index: 0;" class="price text-primary"><b style="color: yellow;">ksh2,000,000 </b><span class="text-white">1500 Sqft</span></div>
+                        </div>
+                        <div class="featured-thumb-data shadow-one">
+                            <div class="p-3">
+                                <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php" style="text-decoration: none;">Malili Apartments</a></h5>
+                                <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> Malili Town</span>
+                            </div>
+                            <div style="background-color: blueviolet;" class="bg-gray quantity px-4 pt-4">
+                                <ul>
+                                    <li><span>1500</span> Sqft</li>
+                                    <li><span>2</span> Beds</li>
+                                    <li><span>1</span> Baths</li>
+                                    <li><span>1</span> Kitchen</li>
+                                    <li><span>1</span> Balcony</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 d-inline-block w-100">
+                                <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : Liam Kt</div>
+                                <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> 25-9-2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--	Recent Properties  -->
 
-        .form-group i {
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            transform: translateY(-50%);
-            pointer-events: none;
-            color: black;
-        }
+    <!--	Why Choose Us -->
+    <div class="full-row living bg-one overlay-secondary-half" style="background: linear-gradient(to right, blueviolet 50%, #3498DB 50%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="living-list pr-4">
+                        <h3 class="pb-4 mb-3 text-white">Why Choose Us</h3>
+                        <ul>
+                            <li class="mb-4 text-white d-flex">
+                                <i class="fas fa-gift fa-3x flat-medium float-left d-table mr-4 text-gray"></i>
+                                <div class="pl-2">
+                                    <h5 class="mb-3">Top Rated</h5>
+                                    <p>The epitome of excellence and customer satisfaction.</p>
+                                </div>
+                            </li>
+                            <li class="mb-4 text-white d-flex">
+                                <i class="fas fa-home fa-3x flat-medium float-left d-table mr-4 text-gray"></i>
+                                <div class="pl-2">
+                                    <h5 class="mb-3">Experience Quality</h5>
+                                    <p>Immerse yourself in a world of unparalleled experience and quality.</p>
+                                </div>
+                            </li>
+                            <li class="mb-4 text-white d-flex">
+                                <i class="fas fa-user-tie fa-3x flat-medium float-left d-table mr-4 text-gray"></i>
+                                <div class="pl-2">
+                                    <h5 class="mb-3">Experienced Agents</h5>
+                                    <p>Trust our skilled and seasoned team of experienced agents.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- New div for the text on the right -->
+                <div class="col-md-12 col-lg-6">
+                    <div class="text-on-right">
+                        <h3 class="pb-4 mb-3 text-white">Our Expertise</h3>
+                        <ul>
+                            <li class="mb-4 text-white d-flex">
+                                <i class="fas fa-chart-line fa-3x flat-medium float-left d-table mr-4 text-gray"></i>
+                                <div class="pl-2">
+                                    <h5 class="mb-3">Market Insights</h5>
+                                    <p>Stay informed with our in-depth market analysis and insights. </p>
+                                </div>
+                            </li>
+                            <li class="mb-4 text-white d-flex">
+                                <i class="fas fa-home fa-3x flat-medium float-left d-table mr-4 text-gray"></i>
+                                <div class="pl-2">
+                                    <h5 class="mb-3">Property Expertise</h5>
+                                    <p>Our expertise covers a wide range of properties.</p>
+                                </div>
+                            </li>
+                            <li class="mb-4 text-white d-flex">
+                                <i class="fas fa-users fa-3x flat-medium float-left d-table mr-4 text-gray"></i>
+                                <div class="pl-2">
+                                    <h5 class="mb-3">Customer Focus</h5>
+                                    <p>Customer satisfaction is our priority.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-        .form-group select,
-        .form-group input {
-            width: calc(100%);
-            height: 50px;
-        }
+            </div>
+        </div>
+    </div>
 
-        .slider-banner1::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
 
-        #banner {
-
-            transition: background-image 0.5s ease-in-out;
-        }
-    </style><br
-
-<<<<<<< HEAD
+    <!--	why choose us -->
     <p style="color: white; font-size: 20px; text-align: center;"></p>
-=======
-    <section>
-        <h1>HOME PAGE</h1>
->>>>>>> ff46f3c2273765b16169371b3376849a263412fc
-        <p>This website aims to revolutionize the process of finding and selecting houses;
-            it will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
-            and offer different features designed to enhance user experience and facilitate informed decision making.</p>
-            One will be able to create personalized profiles allowing You to save preferences, track favorite properties and receive tailored recommendation based on your specific requirements.</p>
-        <p>A search engine will be incorporated to enable everyone to search based on location, price, property features, neighborhood information and other necessities; the website will also facilitate communication between users and real estate agents and landlords/property owners with maximum authenticity allowing face locks and high password configuration.<br>
-            By leveraging advanced technologies, data-driven insights and useful friendly features, the website will empower individuals to find their dream homes efficiently and confidentially.
-        </p>
+    <p>This website aims to revolutionize the process of finding and selecting houses;
+        it will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
+        and offer different features designed to enhance user experience and facilitate informed decision making.</p>
+    One will be able to create personalized profiles allowing You to save preferences, track favorite properties and receive tailored recommendation based on your specific requirements.</p>
+    <p>A search engine will be incorporated to enable everyone to search based on location, price, property features, neighborhood information and other necessities; the website will also facilitate communication between users and real estate agents and landlords/property owners with maximum authenticity allowing face locks and high password configuration.<br>
+        By leveraging advanced technologies, data-driven insights and useful friendly features, the website will empower individuals to find their dream homes efficiently and confidentially.
+    </p>
+
     </section>
-<<<<<<< HEAD
-=======
-    <section>
-        <h3>SERVICES</h3>
-        <p>Our services include:</p>
-        <ul>
-            <li>Property Management</li>
-            <li>Property Valuation</li>
-            <li>Property Sales</li>
-            <li>Property Letting</li>
-            <li>Property Development</li>
-            <li>Property Consultancy</li>
-        </ul>
-    </section>
-    <footer>
-        <h4>FIND US</h4>
-        <li>WhatsApp - <a href="tel:+254723464616" style="text-decoration: none;">0723464616</a></li>
-        <li>Instagram - <a href="https://www.instagram.com/cosyhomes/" target="_blank" style="text-decoration:none;">@cosyhomes</a></li>
-        </ul>
-    </footer>
->>>>>>> ff46f3c2273765b16169371b3376849a263412fc
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -176,4 +323,5 @@
 <footer>
     <p>&copy; 2023 COSY HOMES</p>
 </footer>
+
 </html>
