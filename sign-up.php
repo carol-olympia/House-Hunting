@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Sign Up - House Hunt</title>
-    <link href="assets/img/logo-house.jpg" rel="icon">
+    <link href="assets/img/Real Estate Logo.png" rel="icon">
 
     <link rel="stylesheet" href="assets/css/style.css">
 

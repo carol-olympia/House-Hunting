@@ -13,7 +13,7 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
 
         <title>Enter New Password </title>
-        <link href="assets/img/logo-house.jpg" rel="icon">
+        <link href="assets/img/Real Estate Logo.png" rel="icon">
 
     </head>
     <body>

@@ -95,3 +95,24 @@ footer {
 .back-to-top:hover {
     background-color: #555;
 }
+.navbar-nav .nav-item.active a {
+    font-weight: bold;
+    color: blueviolet;
+    position: relative;
+}
+
+.navbar-nav .nav-item.active a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: red; 
+    bottom: 10px; 
+    left: 10;
+    transition: width 0.3s ease-in-out; 
+}
+
+.navbar-nav .nav-item.active a:hover::after {
+    width: 20%; 
+}

@@ -62,49 +62,43 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a class="nav-link custom-btn custom-border-btn btn" href="index.php" >
-                         HOME
-                    </a>
-                    </li>
 
-                    <li class="nav-item">
-                    <a class="nav-link custom-btn custom-border-btn btn" href="about.php" >
-                            ABOUT US
-                    </a>
-                    </li>
 
-                    <li class="nav-item">
-                    <a class="nav-link custom-btn custom-border-btn btn" href="service.php" >
-                            SERVICES
-                    </a>
-                    </li>
+                    <?php
+                        $currentPage = basename($_SERVER['PHP_SELF']); // Get the current page filename
 
-                    <li class="nav-item">
-                    <a class="nav-link custom-btn custom-border-btn btn" href="contact us.php" >
-                            CONTACT US
-                    </a>
-                    </li>
+                        // Check if the current page is 'about.php' and set the active class accordingly
+                        $aboutActive = ($currentPage == 'about.php') ? 'active' : '';
+                    ?>
 
-                    <li class="nav-item">
-                    <a class="nav-link custom-btn custom-border-btn btn" href="investors.php" >
-                            INVESTORS
-                    </a>
-                    </li>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item <?php echo ($currentPage == 'index.php') ? 'active' : ''; ?>">
+                                <a class="nav-link custom-btn custom-border-btn btn" href="index.php">HOME</a>
+                            </li>
 
-                    <li class="nav-item">
-                    <a class="nav-link custom-btn custom-border-btn btn" href="pricing.php" >
-                           PRICING
-                    </a>
-                    </li>
+                            <li class="nav-item <?php echo ($currentPage == 'about.php') ? 'active' : ''; ?>">
+                                <a class="nav-link custom-btn custom-border-btn btn" href="about.php">ABOUT</a>
+                            </li>
+                            <li class="nav-item <?php echo ($currentPage == 'service.php') ? 'active' : ''; ?>">
+                            <a class="nav-link custom-btn custom-border-btn btn" href="service.php">SERVICES</a>
+                            </li>
 
-                    <li class="nav-item ms-3">
-                        <a class="nav-link custom-btn custom-border-btn btn" href="sign-up.php" style="background-color: blueviolet;margin-top:10px; color: white; padding: 10px 20px; text-decoration: none; display: inline-block; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='blueviolet'">
-                            SIGN UP
-                        </a>
-                    </li>
+                            <li class="nav-item <?php echo ($currentPage == 'contact us.php') ? 'active' : ''; ?>">
+                                <a class="nav-link custom-btn custom-border-btn btn" href="contact us.php">CONTACT US</a>
+                            </li>
 
-                </ul>
+                            <li class="nav-item <?php echo ($currentPage == 'investors.php') ? 'active' : ''; ?>">
+                                <a class="nav-link custom-btn custom-border-btn btn" href="investors.php">INVESTORS</a>
+                            </li>
+
+                            <li class="nav-item <?php echo ($currentPage == 'pricing.php') ? 'active' : ''; ?>">
+                                <a class="nav-link custom-btn custom-border-btn btn" href="pricing.php">PRICING</a>
+                            </li>
+
+                            <li class="nav-item ms-3">
+                                <a class="nav-link custom-btn custom-border-btn btn" href="sign-up.php" style="background-color: blueviolet;margin-top:10px; color: white; padding: 10px 20px; text-decoration: none; display: inline-block; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='blueviolet'">SIGN UP</a>
+                            </li>
+                        </ul>
             </div>
         </div>
     </nav>
