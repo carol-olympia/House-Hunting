@@ -116,24 +116,17 @@
 
             transition: background-image 0.5s ease-in-out;
         }
-    </style><br
-
-<<<<<<< HEAD
-    <p style="color: white; font-size: 20px; text-align: center;"></p>
-=======
-    <section>
-        <h1>HOME PAGE</h1>
->>>>>>> ff46f3c2273765b16169371b3376849a263412fc
-        <p>This website aims to revolutionize the process of finding and selecting houses;
-            it will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
-            and offer different features designed to enhance user experience and facilitate informed decision making.</p>
-            One will be able to create personalized profiles allowing You to save preferences, track favorite properties and receive tailored recommendation based on your specific requirements.</p>
-        <p>A search engine will be incorporated to enable everyone to search based on location, price, property features, neighborhood information and other necessities; the website will also facilitate communication between users and real estate agents and landlords/property owners with maximum authenticity allowing face locks and high password configuration.<br>
-            By leveraging advanced technologies, data-driven insights and useful friendly features, the website will empower individuals to find their dream homes efficiently and confidentially.
+    </style ><br>
+        <section>
+        <p class='' style="margin-bottom: 4px">  House Hunt is a real estate company that provides a platform for property owners, agents and developers to sell and rent properties online. We help buyers and tenants find property easily and quickly. We are the leading real estate and rental marketplace dedicated to empowering consumers with data, inspiration and knowledge around the place they call home, and connecting them with the best local professionals who can help.
+            This website aims to revolutionize the process of finding and selecting houses;
+            It will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
+            and offer different features designed to enhance user experience and facilitate informed decision making.<br>
+            One will be able to create personalized profiles allowing You to save preferences, track favorite properties and receive tailored recommendation based on your specific requirements.</>
+        A search engine will be incorporated to enable everyone to search based on location, price, property features, neighborhood information and other necessities; the website will also facilitate communication between users and real estate agents and landlords/property owners with maximum authenticity allowing face locks and high password configuration.<br>
+            By leveraging advanced technologies, data-driven insights and useful friendly features, the website will empower individuals to find their dream homes efficiently and confidentially.<br>
         </p>
     </section>
-<<<<<<< HEAD
-=======
     <section>
         <h3>SERVICES</h3>
         <p>Our services include:</p>
@@ -146,13 +139,6 @@
             <li>Property Consultancy</li>
         </ul>
     </section>
-    <footer>
-        <h4>FIND US</h4>
-        <li>WhatsApp - <a href="tel:+254723464616" style="text-decoration: none;">0723464616</a></li>
-        <li>Instagram - <a href="https://www.instagram.com/cosyhomes/" target="_blank" style="text-decoration:none;">@cosyhomes</a></li>
-        </ul>
-    </footer>
->>>>>>> ff46f3c2273765b16169371b3376849a263412fc
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
