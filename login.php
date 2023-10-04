@@ -4,37 +4,34 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="assets/css/style.css">
-
     <link rel="stylesheet" href="assets/css/toastr.min.css">
-
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
 
     <title>User login - House </title>
     <link href="assets/img/Real Estate Logo.png" rel="icon">
 
+    <style>
+        form {
+            margin: auto;
+            min-width: 250px;
+            max-width: 350px;
+            border: none
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: 1px solid blueviolet !important;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border: none !important;
+            box-shadow: none !important;
+        }
+    </style>
 </head>
-<style>
-    form {
-        margin: auto;
-        min-width: 250px;
-        max-width: 350px;
-        border: none
-    }
-
-    input[type="text"]:focus,
-    input[type="password"]:focus {
-        outline: 1px solid #12aa1f;
-    }
-
-    input[type="text"]:focus,
-    input[type="password"]:focus {
-        border: none !important;
-        box-shadow: none !important;
-    }
-</style>
 
 <body>
     <div class="d-flex">
@@ -43,51 +40,64 @@
                 <tr>
                     <td class="container-fluid" id="formContainer">
                         <form id="loginForm" method="post">
-                        <style>     .breadcrumb {
-                                background-color: transparent;
-                                padding: 0;
-                                margin: 0;
-                                list-style: none;
-                            }
+                            <style>
+                                .breadcrumb {
+                                    background-color: transparent;
+                                    padding: 0;
+                                    margin: 0;
+                                    list-style: none;
+                                }
 
+                                .breadcrumb-item.active {
+                                    font-weight: bold;
+                                    font-size: 30px;
+                                }
 
-                            .breadcrumb-item.active {
-                                font-weight: bold;
-                                font-size: 30px;
-                            }
+                                .breadcrumb-item::before {
+                                    content: none;
+                                    font-size: 30px;
+                                }
 
-                            .breadcrumb-item::before {
-                                content: none;
-                                font-size: 30px;
-                            }
-
-                            .breadcrumb-item a {
-                                font-size: 30px;
-                                text-decoration: none;
-                            }</style>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item active">Sign Up</li>
-                                <li style="color: blueviolet;" class="breadcrumb-item"><a href="index.php">Home</a></li>
-
-                            </ol>                            <p style="margin-bottom: 25px; font-size: 14.5px" class="text-muted">Welcome back! 🌟 Ready to take charge of your business? Log in to your portal and seize the day.</p>
-                            <div class="form-group">
-                                <label for="username" class="form-label">Username </label>
-                                <input type="text" class="form-control" size="20" name="username_email" placeholder="Enter your username or email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="form-label">Password </label>
-                                <input type="password" class="form-control" size="20" name="password" placeholder="Enter your password" required>
-                            </div>
-                            <div style="margin-bottom: 20px; color: blueviolet;">
-                                <div>
-                                    <a href="reset-password-form.php" style="text-decoration: none; color: blueviolet;">Forgot Password?</a>
+                                .breadcrumb-item a {
+                                    font-size: 30px;
+                                    text-decoration: none;
+                                }
+                            </style>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active">Sign Up</li>
+                                    <li style="color: blueviolet;" class="breadcrumb-item"><a href="index.php">Home</a></li>
+                                </ol>
+                                <p style="margin-bottom: 25px; font-size: 14.5px" class="text-muted">Welcome back! 🌟 Ready to take charge of your business? Log in to your portal and seize the day.</p>
+                                <div class="form-group">
+                                    <label for="username" class="form-label">Username </label>
+                                    <input type="text" class="form-control" size="20" name="username_email" placeholder="Enter your username or email" required>
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <label for="password" class="form-label">Password </label>
+                                    <input type="password" class="form-control" size="20" name="password" placeholder="Enter your password" required>
+                                </div>
+                                <div style="margin-bottom: 20px; color: blueviolet;">
+                                    <div>
+                                        <a href="reset-password-form.php" style="text-decoration: none; color: blueviolet;">Forgot Password?</a>
+                                    </div>
+                                </div>
 
-                            <div class="d-grid">
-                                <button class="btn btn-block btn-purple" id="loginButton" style="margin-top:1em;background-color:blueviolet;color:white;" type="submit">TAKE ME IN <img src="assets/img/right-arrow.png" alt="Right Arrow"></button>
-                            </div>
+                                <!-- Add this inside the form -->
+                                <div class="form-group">
+                                    <label for="login_type" class="form-label">Login Type </label>
+                                    <select style=" outline: 1px solid blueviolet !important;
+                                        border: none !important;
+                                        box-shadow: none !important;" 
+                                        class="form-control" name="login_type" required>
+                                        <option value="admin">Admin</option>
+                                        <option value="user">User</option>
+                                    </select>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button class="btn btn-block btn-purple" id="loginButton" style="margin-top:1em;background-color:blueviolet;color:white;" type="submit">TAKE ME IN <img src="assets/img/right-arrow.png" alt="Right Arrow"></button>
+                                </div>
                         </form>
                     </td>
                 </tr>
@@ -114,6 +124,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission
@@ -129,19 +140,48 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
-                        Swal.fire({
-                            icon: "success",
-                            title: "Login Successful!",
-                            text: "You have successfully logged in.",
-                            confirmButtonText: "OK"
-                        }).then(function() {
-                            window.location.href = "dashboard.php";
-                        });
+                        const loginType = formData.get('login_type');
+                        if (loginType === 'admin') {
+                            if (data.user_type === 'admin') {
+                                Swal.fire({
+                                    icon: "question",
+                                    title: "Admin Login",
+                                    text: "You are an admin. Do you want to continue as a user?",
+                                    showCancelButton: true,
+                                    confirmButtonText: "Yes, continue as user",
+                                    cancelButtonText: "No, stay as admin"
+                                }).then(function(result) {
+                                    if (result.isConfirmed) {
+                                        // Redirect to user page
+                                        window.location.href = "http://localhost/house-hunting/admin/user.php";
+                                    }
+                                });
+                            } else {
+                                Swal.fire({
+                                    icon: "success",
+                                    title: "Login Successful!",
+                                    text: "You have successfully logged in as an admin.",
+                                    confirmButtonText: "OK"
+                                }).then(function() {
+                                    window.location.href = "http://localhost/house-hunting/admin/";
+                                });
+                            }
+                        } else {
+                            Swal.fire({
+                                icon: "success",
+                                title: "Login Successful!",
+                                text: "You have successfully logged in as a user.",
+                                confirmButtonText: "OK"
+                            }).then(function() {
+                                // Redirect to user page
+                                window.location.href = "http://localhost/house-hunting/admin/user.php";
+                            });
+                        }
                     } else {
                         Swal.fire({
                             icon: "error",
-                            title: "Login Failed!",
-                            text: "Incorrect username/email or password.",
+                            title: "Login Failed",
+                            text: data.message,
                             confirmButtonText: "OK"
                         });
                     }
@@ -151,6 +191,17 @@
                 });
         });
     </script>
+
+    <!-- ... (other HTML code) ... -->
+
+
+    <!-- ... (other HTML code) ... -->
+
+    <!-- ... (other HTML code) ... -->
+
+
+    <!-- ... (other HTML code) ... -->
+
 </body>
 
 </html>
