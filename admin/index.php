@@ -1,8 +1,8 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit();
+  header("Location: /House-Hunting/login.php");
+  exit();
 }
 
 include('includes/header.php');
