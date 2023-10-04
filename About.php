@@ -22,63 +22,50 @@
 
 
 
-<body>
-    <?php include 'include/header.php'; ?>
+<body style="background-color:white;">
+<?php include 'include/header.php'; ?>
 
 
     <!-- About Us Section -->
-    <section id="about-us" class="bg-light">
+    <section style="background-color:white;" class="text-center" id="about-us" class="bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="text-secondary text-center mb-4">About Us</h2>
-                    <p class="text-center">
-                        Welcome to House Hunt, your trusted platform for finding the perfect property. We strive to provide exceptional service and assist you in every step of your real estate journey.
-                    </p>
-                    <p class="text-center">
-                        Our mission is to simplify the process of buying, selling, and renting properties, ensuring a seamless and enjoyable experience for our clients.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="about-us" class="bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="text-secondary text-center mb-4">About Us</h2>
-                    <p class="text-center">
-                        Welcome to House Hunt, your trusted platform for finding the perfect property. We strive to provide exceptional service and assist you in every step of your real estate journey.
-                    </p>
-                    <p class="text-center">
-                        Our mission is to simplify the process of buying, selling, and renting properties, ensuring a seamless and enjoyable experience for our clients.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section><section id="about-us" class="bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="text-secondary text-center mb-4">About Us</h2>
-                    <p class="text-center">
-                        Welcome to House Hunt, your trusted platform for finding the perfect property. We strive to provide exceptional service and assist you in every step of your real estate journey.
-                    </p>
-                    <p class="text-center">
-                        Our mission is to simplify the process of buying, selling, and renting properties, ensuring a seamless and enjoyable experience for our clients.
+                    <p>
+                        Welcome to House Hunt, your trusted platform for finding the perfect property. We strive to provide exceptional service and assist you in every step of your real estate journey.<br>
+                        Our mission is to simplify the process of buying, selling, and renting properties, ensuring a seamless and enjoyable experience for our clients;this is enabled by our team of highly qualified and experienced professionals who are dedicated to providing the best service to our clients through our website and mobile app which help in navigation and keying in of data
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <?php include 'include/footer.php'; ?>
+    <!-- Our Team Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-secondary text-center mb-4">Our Team</h2>
+                    <p class="text-center">
+                        Our team is made up of highly qualified and experienced professionals who are dedicated to providing the best service to our clients through our website and mobile app which help in navigation and keying in of data to ensure that you get the best property that suits your needs seamlessly.
+                    </p>
+                </div>
+
+        </div> 
+       </section>
+
+  
 
     <!-- Back to Top Button -->
     <div class="back-to-top" id="backToTop">
         <i class="fa fa-arrow-up"></i>
     </div>
+
+    <!-- Footer -->
+    <footer style="background-color:black;" >
+        &copy; 2023 House Hunt. All Rights Reserved.
+    </footer>
 
     <!-- Add your existing script imports and custom scripts here -->
 </body>
