@@ -63,10 +63,10 @@
     </div>
 
     <!-- Footer -->
-    <footer style="background-color:black;" >
-        &copy; 2023 House Hunt. All Rights Reserved.
+    <footer>
+        </?include 'include/footer.php'; ?>
     </footer>
-
+    
     <!-- Add your existing script imports and custom scripts here -->
 </body>
 </html>
