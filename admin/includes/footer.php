@@ -4,7 +4,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-          <p>&copy; 2023 COSY HOMES - Developed By Caroline Eliana</p>
+          <p>&copy; 2023 COSY HOMES - Developed By Carol Njenga</p>
           </div>
         </div>
       </footer>
