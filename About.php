@@ -64,9 +64,9 @@
 
     <!-- Footer -->
     <footer>
-        </?include 'include/footer.php'; ?>
+        <?php include 'include/footer.php'; ?>
     </footer>
-    
+
     <!-- Add your existing script imports and custom scripts here -->
 </body>
 </html>
