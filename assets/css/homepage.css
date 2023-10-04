@@ -18,7 +18,7 @@ p {
     color: black;
 }
 
-
+/*footer*/
 
 footer {
     background-color: #f1f1f1;
@@ -27,4 +27,92 @@ footer {
     padding: 10px;
     list-style: none;
 }
+.icon-thumb-one .rounded-circle {
+    width: 30px;
+    line-height: 30px;
+    top: 0;
+    left: 35%;
+}
 
+.icon-thumb-one i {
+    border: 1px solid;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    line-height: 140px;
+}
+
+.round-icon {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+}
+
+.left-arrow,
+.right-arrow {
+    position: relative;
+}
+
+.left-arrow::before {
+    content: "";
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    border-bottom: 2px dotted;
+    width: 62%;
+}
+
+.left-arrow::after {
+    content: "\f111";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: 135%;
+    top: 40%;
+    font-size: 18px;
+}
+.back-to-top {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blueviolet;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.back-to-top i {
+    font-size: 20px;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+.navbar-nav .nav-item.active a {
+    font-weight: bold;
+    color: blueviolet;
+    position: relative;
+}
+
+.navbar-nav .nav-item.active a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: red; 
+    bottom: 10px; 
+    left: 10;
+    transition: width 0.3s ease-in-out; 
+}
+
+.navbar-nav .nav-item.active a:hover::after {
+    width: 20%; 
+}

@@ -1,0 +1,25 @@
+.copyright {
+    margin-top: 30px;
+    border-top: 1px solid #666;
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.copyright .line-menu li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.copyright .line-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright .line-menu li a:hover {
+    text-decoration: none;
+}
+.text-white {
+    color: #fff!important;
+    text-decoration: none!important;
+}

@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html>
+    <html>
 
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link href="assets/img/Real Estate Logo.png" rel="icon">
-    <!-- CSS FILES -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+            <link href="assets/img/Real Estate Logo.png" rel="icon">
+            <!-- CSS FILES -->
+            <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="icons/bootstrap-icons.css" rel="stylesheet">
+            <link href="icons/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="assets/css/house-hunt-header.css" rel="stylesheet">
+            <link href="assets/css/house-hunt-header.css" rel="stylesheet">
 
-    <link href="assets/css/homepage.css" rel="stylesheet">
-</head>
+            <link href="assets/css/homepage.css" rel="stylesheet">
 
-<body>
-    <?php include 'include/header.php'; ?>
+            <link href="assets/css/belowheader.css" rel="stylesheet">
+
+            <link href="assets/css/footer.css" rel="stylesheet">
+
+        </head>
+
+        <body>
+             <?php include 'include/header.php'; ?>
 
     <!-- Banner Start -->
     <div id="banner" class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('assets/img/hosuek1.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
@@ -116,15 +121,16 @@
 
             transition: background-image 0.5s ease-in-out;
         }
-    </style ><br>
-        <section>
-        <p class='' style="margin-bottom: 4px">  House Hunt is a real estate company that provides a platform for property owners, agents and developers to sell and rent properties online. We help buyers and tenants find property easily and quickly. We are the leading real estate and rental marketplace dedicated to empowering consumers with data, inspiration and knowledge around the place they call home, and connecting them with the best local professionals who can help.
-            This website aims to revolutionize the process of finding and selecting houses;
-            It will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
-            and offer different features designed to enhance user experience and facilitate informed decision making.<br>
-            One will be able to create personalized profiles allowing You to save preferences, track favorite properties and receive tailored recommendation based on your specific requirements.</>
-        A search engine will be incorporated to enable everyone to search based on location, price, property features, neighborhood information and other necessities; the website will also facilitate communication between users and real estate agents and landlords/property owners with maximum authenticity allowing face locks and high password configuration.<br>
-            By leveraging advanced technologies, data-driven insights and useful friendly features, the website will empower individuals to find their dream homes efficiently and confidentially.<br>
+    </style><br>
+    
+    <section>
+        <h1>HOME PAGE</h1>
+        <p>This website aims to revolutionize the process of finding and selecting houses;
+            it will provide users with an interface and powerful search functionalities to streamline the house hunting project/journey
+            and offer different features designed to enhance user experience and facilitate informed decision making.</p>
+            One will be able to create personalized profiles allowing You to save preferences, track favorite properties and receive tailored recommendation based on your specific requirements.</p>
+        <p>A search engine will be incorporated to enable everyone to search based on location, price, property features, neighborhood information and other necessities; the website will also facilitate communication between users and real estate agents and landlords/property owners with maximum authenticity allowing face locks and high password configuration.<br>
+            By leveraging advanced technologies, data-driven insights and useful friendly features, the website will empower individuals to find their dream homes efficiently and confidentially.
         </p>
     </section>
     <section>
@@ -139,6 +145,9 @@
             <li>Property Consultancy</li>
         </ul>
     </section>
+    <footer>
+      2023 House Hunt. All rights reserved.
+    </footer>
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -148,18 +157,35 @@
     const images = ['assets/img/Kenyan-House-2.webp', 'assets/img/hero.jpg', 'assets/img/maxresdefault.jpg'];
     let currentIndex = 1;
 
-    function changeBackgroundImage() {
-        banner.style.backgroundImage = `url('${images[currentIndex]}')`;
-        currentIndex = (currentIndex + 1) % images.length;
-    }
+                function changeBackgroundImage() {
+                    banner.style.backgroundImage = `url('${images[currentIndex]}')`;
+                    currentIndex = (currentIndex + 1) % images.length;
+                }
 
-    setInterval(changeBackgroundImage, 5000);
+                setInterval(changeBackgroundImage, 5000);
 
-    window.addEventListener('load', () => {
-        banner.style.backgroundImage = `url('${images[0]}')`;
-    });
-</script>
-<footer>
-    <p>&copy; 2023 COSY HOMES</p>
-</footer>
+                window.addEventListener('load', () => {
+                    banner.style.backgroundImage = `url('${images[0]}')`;
+                });
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+
+                function toggleBackToTopButton() {
+                    const backToTopButton = document.getElementById('backToTop');
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        backToTopButton.style.display = 'block';
+                    } else {
+                        backToTopButton.style.display = 'none';
+                    }
+                }
+
+                // Attach the function to the scroll event
+                window.addEventListener('scroll', toggleBackToTopButton);
+                document.getElementById('backToTop').addEventListener('click', scrollToTop);
+            </script>
+
 </html>
