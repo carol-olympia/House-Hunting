@@ -64,6 +64,8 @@
 
     <!-- Footer -->
     <footer>
+      <!-- Your mistake  </?include 'include/footer.php'; ?> ------>
+      <!----- correct way to include footer.php ------>
         <?php include 'include/footer.php'; ?>
     </footer>
 
