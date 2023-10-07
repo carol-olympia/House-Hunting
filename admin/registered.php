@@ -29,7 +29,7 @@ include('config/dbcon.php');
                 <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name" required>
               </div>
 
-             
+
               <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username" required>
@@ -49,7 +49,7 @@ include('config/dbcon.php');
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" required>
               </div>
-            
+
               <div class="form-group">
                 <label for="role">Role</label>
                 <select id="role" name="role" class="form-control" required>
@@ -79,12 +79,12 @@ include('config/dbcon.php');
                   margin-bottom: 1rem;
                 }
               </style>
-            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary" name="submit">Save</button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" name="submit">Save</button>
+        </div>
         </form>
       </div>
     </div>
@@ -111,12 +111,12 @@ include('config/dbcon.php');
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-      <?php
-if (isset($_SESSION['status'])) {
-    $alertClass = strpos($_SESSION['status'], 'Successfully') !== false ? "success" : "error";
-    $icon = $alertClass === "success" ? "success" : "error";
+        <?php
+        if (isset($_SESSION['status'])) {
+          $alertClass = strpos($_SESSION['status'], 'Successfully') !== false ? "success" : "error";
+          $icon = $alertClass === "success" ? "success" : "error";
 
-    echo '<script>
+          echo '<script>
         Swal.fire({
             icon: "' . $icon . '",
             title: "' . $_SESSION['status'] . '",
@@ -127,9 +127,9 @@ if (isset($_SESSION['status'])) {
         });
       </script>';
 
-    unset($_SESSION['status']);
-}
-?>
+          unset($_SESSION['status']);
+        }
+        ?>
 
 
 
