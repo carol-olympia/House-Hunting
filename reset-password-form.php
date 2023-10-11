@@ -45,12 +45,49 @@
     </style>
     <body>
         <div class="d-flex">
+            
             <div class="col-md-6">
+                
+                
             <table style="height: 100vh; width: 100%;">
+            
                     <tr>
+                        
+                        
                         <td class="container-fluid" id="formContainer">
                         <form id="resetPasswordForm" method="post" action="check-email-reset.php">
-                                <h3 class="form-signin-heading" style="color: blueviolet; font-size: 1.7em">Reset Password</h3>
+                            
+                        
+                        <style>
+                            .breadcrumb {
+                                background-color: transparent;
+                                padding: 0;
+                                margin: 0;
+                                list-style: none;
+                            }
+
+                            .breadcrumb-item.active {
+                                font-weight: bold;
+                                font-size: 30px;
+                            }
+
+                            .breadcrumb-item::before {
+                                content: none;
+                                font-size: 30px;
+                            }
+
+                            .breadcrumb-item a {
+                                font-size: 30px;
+                                text-decoration: none;
+                            }
+                        </style>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active">Reset-Password</li>
+                                <li style="color: blueviolet;" class="breadcrumb-item"><a href="index.php">Home</a></li>
+
+                            </ol>
+                        </nav>
                                 <p style="margin-bottom: 25px; font-size: 14.5px" class="text-muted">Enter your email to reset your password.</p>
                                 <div class="form-group">
                                     <label for="email" class="form-label">Email</label>
@@ -63,6 +100,7 @@
                         </td>
                     </tr>
                 </table>
+                
             </div>
             <div class="col-md-6" style="height: 100vh; margin: 0px;background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                 <div style="background: grey; height: 100%; width: 100%; left : 0; opacity : .9;z-index: 1"></div>
@@ -73,6 +111,10 @@
                     <p>Enter the portal to experience a seamless process for selling your house, all in one place.</p>
                     <p>*House Search made easy.*</p>
                     
+                    <div style="margin-top: 2em">
+                    <p>Already Got Your Password?</p>
+                    <a class="btn btn-warning" href="login.php"> Login now &nbsp; <span class="fi fi-sr-interactive"></span></a>
+                </div>
                 </div>
             </div>
         

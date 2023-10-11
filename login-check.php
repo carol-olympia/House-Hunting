@@ -4,7 +4,7 @@ session_start(); // Start the session
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "house";
+$dbname = "house_sell"; // Change the database name to "house_sell"
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -30,29 +30,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $loginType = $_POST['login_type'];
 
         // Prepare SQL query using prepared statements
-        $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE (username = ? OR email_address = ?)");
+        $stmt = $conn->prepare("SELECT id, username, password, role FROM users WHERE (username = ? OR email = ?)");
         $stmt->bind_param("ss", $usernameEmail, $usernameEmail);
         $stmt->execute();
         $stmt->store_result();
 
         if ($stmt->num_rows == 1) {
             // Bind the result variables
-            $stmt->bind_result($user_id, $username, $hashedPassword);
+            $stmt->bind_result($user_id, $username, $hashedPassword, $role);
             $stmt->fetch();
 
             // Verify hashed password
             if (password_verify($password, $hashedPassword)) {
-                // Check if the login is for 'mark@gmail.com'
-                if ($loginType === 'admin' && $usernameEmail !== 'mark@gmail.com') {
-                    $response['success'] = false;
-                    $response['message'] = "You are an admin. Do you want to continue as a user?";
-                    $response['user_type'] = 'admin';
-                } else {
-                    // Login successful
+                // Check if the login is for 'admin'
+                if ($loginType === 'admin' && $role === 'Admin') {
                     $_SESSION['user_id'] = $user_id; // Store user ID in session
                     $_SESSION['username'] = $username; // Store username in session
+                    $_SESSION['user_type'] = 'admin'; // Store user type in session
                     $response['success'] = true;
-                    $response['message'] = "Login successful.";
+                    $response['message'] = "Login successful as admin.";
+                    $response['user_type'] = 'admin';
+                } else {
+                    $_SESSION['user_id'] = $user_id; // Store user ID in session
+                    $_SESSION['username'] = $username; // Store username in session
+                    $_SESSION['user_type'] = 'user'; // Store user type in session
+                    $response['success'] = true;
+                    $response['message'] = "Login successful as user.";
                     $response['user_type'] = 'user';
                 }
             } else {

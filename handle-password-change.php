@@ -1,12 +1,12 @@
 <?php
 // Start or resume the session
-session_start();  // Start or resume the session
+session_start();
 
 // Include your database connection and other necessary setup
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "house";
+$dbname = "house_sell";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if the user has gone through the password reset process
     if (isset($_SESSION['password_reset_email']) && $_SESSION['password_reset_email'] === $email) {
         // Update the user's password in the database
-        $sql = "UPDATE users SET password='$hashedPassword' WHERE email_address='$email'";
+        $sql = "UPDATE users SET password='$hashedPassword' WHERE email='$email'";
 
         if ($conn->query($sql) === TRUE) {
             // Password reset successful, reset the session

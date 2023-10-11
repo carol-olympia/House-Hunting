@@ -2,8 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "house";
-
+$dbname = "house_sell";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -20,61 +19,40 @@ function sanitize_input($data) {
     return $data;
 }
 
-// Function to format phone number (replace with your own formatting logic)
-function format_phone_number($phone_number) {
-    $phone_number = preg_replace('/[^0-9]/', '', $phone_number);
-    return $phone_number;
-}
 // Retrieve form data
-$first_name = sanitize_input($_POST['first_name']);
-$last_name = sanitize_input($_POST['last_name']);
-$phone_number = sanitize_input($_POST['phone_number']);
-$email_address = sanitize_input($_POST['email_address']);
+$name = sanitize_input($_POST['name']);
 $username = sanitize_input($_POST['username']);
-$password = $_POST['password'];
-$confirm_password = $_POST['confirm_password'];  // New variable to hold confirm password
+$email_address = sanitize_input($_POST['email_address']);
+$phone_number = sanitize_input($_POST['phone_number']);
+$role = sanitize_input($_POST['role']);
+$status = sanitize_input($_POST['status']);
 
-// Check if password and confirm password match
-if ($password !== $confirm_password) {
-    echo "password_mismatch";  // Passwords do not match
+// Hash the password (assuming there's only one password field)
+$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+// Validate phone number length
+if (strlen($phone_number) < 10) {
+    echo "invalid_phone_number"; // Phone number length is insufficient
 } else {
-    // Sanitize and format the phone number with the country code
-    $phone_number = format_phone_number($phone_number);
+    // Check if email already exists
+    $email_check_query = "SELECT * FROM users WHERE email='$email_address'";
+    $email_check_result = $conn->query($email_check_query);
 
-    // Validate phone number length
-    if (strlen($phone_number) < 10) {
-        echo "invalid_phone_number"; // Phone number length is insufficient
+    if ($email_check_result->num_rows > 0) {
+        // Email is already in use
+        echo "email_in_use";
     } else {
-        // Hash the password
-        $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+        // Email is not in use, proceed to insert the new user
+       // Prepare SQL query for inserting new user
+$insert_query = "INSERT INTO users (name, username, email, phone, role, status, password)
+VALUES ('$name', '$username', '$email_address', '$phone_number', '$role', '$status', '$password')";
 
-        // Check if email and username are already in use
-        $email_check_query = "SELECT * FROM users WHERE email_address='$email_address'";
-        $email_check_result = $conn->query($email_check_query);
 
-        $username_check_query = "SELECT * FROM users WHERE username='$username'";
-        $username_check_result = $conn->query($username_check_query);
-
-        if ($email_check_result->num_rows > 0 && $username_check_result->num_rows > 0) {
-            // Both email and username are already in use
-            echo "both_in_use";
-        } elseif ($email_check_result->num_rows > 0) {
-            // Email is already in use
-            echo "email_in_use";
-        } elseif ($username_check_result->num_rows > 0) {
-            // Username is already in use
-            echo "username_in_use";
+        // Execute the SQL query to insert new user
+        if ($conn->query($insert_query) === TRUE) {
+            echo "success"; // Return success message
         } else {
-            // Prepare SQL query for inserting new user
-            $insert_query = "INSERT INTO users (first_name, last_name, phone_number, email_address, username, password)
-                             VALUES ('$first_name', '$last_name', '$phone_number', '$email_address', '$username', '$hashed_password')";
-
-            // Execute the SQL query to insert new user
-            if ($conn->query($insert_query) === TRUE) {
-                echo "success"; // Return success message
-            } else {
-                echo "Error: " . $insert_query . "<br>" . $conn->error;
-            }
+            echo "Error: " . $insert_query . "<br>" . $conn->error;
         }
     }
 }

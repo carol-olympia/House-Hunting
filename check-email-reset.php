@@ -4,7 +4,7 @@ session_start();  // Start or resume the session
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "house";
+$dbname = "house_sell";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,12 +15,11 @@ if ($conn->connect_error) {
 }
 
 $response = array();  // Create a response array
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
 
     // Check if the email exists in the database
-    $check_email_query = "SELECT * FROM users WHERE email_address='$email'";
+    $check_email_query = "SELECT * FROM users WHERE email='$email'";
     $result = $conn->query($check_email_query);
 
     if ($result->num_rows > 0) {
@@ -35,6 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $response['emailExists'] = false;
     }
 }
+
+
 
 // Close the database connection
 $conn->close();

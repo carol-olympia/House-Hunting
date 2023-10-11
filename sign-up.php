@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="assets/css/toastr.min.css">
 
 
-        <link rel="stylesheet" href="assets/style/intlTelinput.min.css">
-        
+    <link rel="stylesheet" href="assets/style/intlTelinput.min.css">
+
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
@@ -29,24 +29,29 @@
             <table style="height: 100vh; width: 100%">
                 <tr>
                     <td class="container-fluid">
-                    <style>     .breadcrumb {
+                        <style>
+                            .breadcrumb {
                                 background-color: transparent;
                                 padding: 0;
                                 margin: 0;
                                 list-style: none;
                             }
+
                             .breadcrumb-item.active {
                                 font-weight: bold;
                                 font-size: 30px;
                             }
+
                             .breadcrumb-item::before {
                                 content: none;
                                 font-size: 30px;
                             }
+
                             .breadcrumb-item a {
                                 font-size: 30px;
                                 text-decoration: none;
-                            }</style>
+                            }
+                        </style>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item active">Sign Up</li>
@@ -59,38 +64,57 @@
                         <form action="process_form.php" id="register_form" method="post" accept-charset="utf-8">
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label for="first_name" class="form-label required">First Name</label>
-                                    <input type="text" name="first_name" value="" class="form-control" id="first_name" placeholder="Enter your first name" required="" />
+                                    <label for="id" class="form-label required">ID</label>
+                                    <input type="text" name="id" value="" class="form-control" id="id" placeholder="Enter your ID" required="" disabled="disabled" style="background-color: #f5f5f5; cursor: not-allowed;" />
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <label for="last_name" class="form-label required">Last Name</label>
-                                    <input type="text" name="last_name" value="" class="form-control" id="last_name" placeholder="Enter your last name" required="" />
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="mobile" class="form-label required">Phone Number</label>
-                                    <input type="text" name="phone_number" value="" id="phone_number" class="form-control" placeholder="Enter your phone" required="" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-sm-6">
-                                    <label for="email_address" class="form-label required">Email Address</label>
-                                    <input type="text" name="email_address" value="" id="email_address" class="form-control" placeholder="Enter your Email Address" required="" />
+                                    <label for="name" class="form-label required">Name</label>
+                                    <input type="text" name="name" value="" class="form-control" id="name" placeholder="Enter your name" required="" />
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="username" class="form-label required">Username</label>
                                     <input type="text" name="username" value="" class="form-control" id="username" placeholder="Enter your username" required="" />
                                 </div>
-                            </div>
-                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="email" class="form-label required">Email</label>
+                                    <input type="text" name="email_address" value="" id="email" class="form-control" placeholder="Enter your email" required="" />
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="phone" class="form-label required">Phone</label>
+                                    <input type="text" name="phone_number" value="" id="phone_number" class="form-control" placeholder="Enter your phone" required="" />
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="role" class="form-label required">Role</label>
+                                    <select name="role" id="role" class="form-control" required="">
+                                        <option value="" disabled selected>Select Role</option>
+                                        <option value="admin" disabled class="blur-option">&#x1F451; Admin</option>
+                                        <option value="user">&#x1F468;&#x200D;&#x1F393; User</option> <!-- User icon -->
+                                    </select>
+                                </div>
+                                <style>
+                                    .blur-option {
+                                        color: rgba(0, 0, 0, 0.5);
+                                    }
+
+                                    .blur-option:disabled {
+                                        filter: blur(4px);
+                                        cursor: not-allowed;
+                                    }
+                                </style>
+                                <div class="form-group col-sm-6">
+                                    <label for="status" class="form-label required">Status</label>
+                                    <select name="status" id="status" class="form-control" required="">
+                                        <option value="" disabled selected>Select Status</option>
+                                        <option value="Active">&#x1F468;&#x200D;&#x1F4BC; Active</option>
+                                        <option value="Inactive">❌ Inactive</option>
+                                    </select>
+                                </div>
+
+
                                 <div class="form-group col-sm-6">
                                     <label for="password" class="form-label required">Password</label>
                                     <input type="password" name="password" value="" size="20" id="password" placeholder="Enter your password" class="form-control" required="" autocomplete="nop" />
                                 </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="confirm_password" class="form-label required">Confirm Password</label>
-                                    <input type="password" name="confirm_password" value="" size="20" id="confirm_password" placeholder="Enter your password" class="form-control" required="" autocomplete="off" />
-                                </div>
-
                             </div>
                             <div class="d-grid">
                                 <button type="submit" id="registerButton" class="btn btn-block btn-purple" style="margin-top:2em; background-color:blueviolet;color:white">Get Started Now <img src="assets/img/right-arrow.png" alt="Right Arrow"></button>
@@ -135,6 +159,7 @@
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         document.getElementById("register_form").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission behavior
@@ -152,20 +177,7 @@
                 timer: 1500
             };
 
-            // Check if password and confirm password match
-            var password = formData.get("password");
-            var confirmPassword = formData.get("confirm_password");
-            if (password !== confirmPassword) {
-                // Display an error message for password mismatch
-                Swal.fire({
-                    ...swalConfig,
-                    icon: "error",
-                    text: "Passwords do not match. Please try again."
-                });
-                return; // Exit the function to prevent further processing
-            }
-
-            // Send an AJAX request to process_form.php
+            // Send an AJAX request to the PHP script for form processing
             $.ajax({
                 type: "POST",
                 url: "process_form.php",
@@ -175,11 +187,11 @@
                 success: function(response) {
                     switch (response) {
                         case "success":
-                            // User added successfully
+                            // User added/updated successfully
                             Swal.fire({
                                 ...swalConfig,
                                 icon: "success",
-                                text: "User added successfully"
+                                text: "User added/updated successfully"
                             }).then(function() {
                                 // Redirect to your signup page
                                 window.location.href = "sign-up.php";
@@ -228,24 +240,7 @@
                 }
             });
         });
-
-        // Function to validate password and confirm password
-        function validatePassword() {
-            var password = document.getElementById("password").value;
-            var confirmPassword = document.getElementById("confirm_password").value;
-
-            if (password !== confirmPassword) {
-                // Display an error message
-                Swal.fire({
-                    icon: "error",
-                    text: "Passwords do not match. Please try again."
-                });
-                return false;
-            }
-            return true;
-        }
     </script>
-
 
 
     <style>
@@ -313,4 +308,3 @@
 </body>
 
 </html>
-

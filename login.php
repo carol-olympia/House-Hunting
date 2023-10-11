@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
 
-    <title>User login - House </title>
+    <title>User login - House Sell</title>
     <link href="assets/img/Real Estate Logo.png" rel="icon">
 
     <style>
@@ -17,7 +17,7 @@
             margin: auto;
             min-width: 250px;
             max-width: 350px;
-            border: none
+            border: none;
         }
 
         input[type="text"]:focus,
@@ -39,7 +39,7 @@
             <table style="height: 100vh; width: 100%;">
                 <tr>
                     <td class="container-fluid" id="formContainer">
-                        <form id="loginForm" method="post">
+                        <form id="loginForm" method="post" action="login-check.php"> <!-- Updated action to the correct PHP script -->
                             <style>
                                 .breadcrumb {
                                     background-color: transparent;
@@ -126,81 +126,77 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
-            // Fetch the form data
-            const formData = new FormData(event.target);
+    // Fetch the form data
+    const formData = new FormData(event.target);
 
-            // Send a POST request to the server
-            fetch("login-check.php", {
-                    method: "POST",
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        const loginType = formData.get('login_type');
-                        if (loginType === 'admin') {
-                            if (data.user_type === 'admin') {
-                                Swal.fire({
-                                    icon: "question",
-                                    title: "Admin Login",
-                                    text: "You are an admin. Do you want to continue as a user?",
-                                    showCancelButton: true,
-                                    confirmButtonText: "Yes, continue as user",
-                                    cancelButtonText: "No, stay as admin"
-                                }).then(function(result) {
-                                    if (result.isConfirmed) {
-                                        // Redirect to user page
-                                        window.location.href = "http://localhost/house-hunting/admin/user.php";
-                                    }
-                                });
-                            } else {
-                                Swal.fire({
-                                    icon: "success",
-                                    title: "Login Successful!",
-                                    text: "You have successfully logged in as an admin.",
-                                    confirmButtonText: "OK"
-                                }).then(function() {
-                                    window.location.href = "http://localhost/house-hunting/admin/";
-                                });
-                            }
-                        } else {
-                            Swal.fire({
-                                icon: "success",
-                                title: "Login Successful!",
-                                text: "You have successfully logged in as a user.",
-                                confirmButtonText: "OK"
-                            }).then(function() {
-                                // Redirect to user page
-                                window.location.href = "http://localhost/house-hunting/admin/user.php";
-                            });
+    // Send a POST request to the server
+    fetch("login-check.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            const loginType = formData.get('login_type');
+            if (loginType === 'admin') {
+                if (data.user_type === 'admin') {
+                    Swal.fire({
+                        icon: "question",
+                        title: "Admin Login",
+                        text: "You are an admin. Do you want to continue?",
+                        showCancelButton: true,
+                        confirmButtonText: "Yes, continue",
+                        cancelButtonText: "back to login"
+                    }).then(function(result) {
+                        if (result.isConfirmed) {
+                            // Redirect to admin page
+                            window.location.href = "admin/index.php";
                         }
-                    } else {
-                        Swal.fire({
-                            icon: "error",
-                            title: "Login Failed",
-                            text: data.message,
-                            confirmButtonText: "OK"
-                        });
-                    }
-                })
-                .catch(error => {
-                    console.error("Error:", error);
+                    });
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Access Denied",
+                        text: "You are not authorized as an admin. Do you want to continue using your credentials?",
+                        showCancelButton: true,
+                        confirmButtonText: "Yes, continue",
+                        cancelButtonText: "back to login"
+                    }).then(function(result) {
+                        if (result.isConfirmed) {
+                            // Redirect to user page
+                            window.location.href = "admin/user.php";
+                        }
+                    });
+                }
+            } else if (loginType === 'user') {
+                Swal.fire({
+                    icon: "success",
+                    title: "Login Successful",
+                    text: data.message,
+                    confirmButtonText: "OK"
+                }).then(function() {
+                    // Redirect to user page
+                    window.location.href = "admin/user.php";
                 });
-        });
-    </script>
+            }
+        } else {
+            Swal.fire({
+                icon: "error",
+                title: "Login Failed",
+                text: data.message,
+                confirmButtonText: "OK"
+            });
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+});
 
-    <!-- ... (other HTML code) ... -->
-
-
-    <!-- ... (other HTML code) ... -->
-
-    <!-- ... (other HTML code) ... -->
-
-
-    <!-- ... (other HTML code) ... -->
+</script>
 
 </body>
 

@@ -57,7 +57,7 @@
             </li>
           </ul>
         </li>
-  <!--setting for admin -->
+        <!--setting for admin -->
         <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-cog"></i>
@@ -94,6 +94,14 @@
           </a>
         </ul>
       </nav>
+      <form action="logout.php" method="POST"> <!-- Update this to your actual path -->
+    <button type="submit" name="logout" class="btn btn-danger btn-block">
+        <i class="fas fa-power-off"></i> Logout
+    </button>
+</form>
+
+
+
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->

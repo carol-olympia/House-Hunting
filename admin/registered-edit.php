@@ -54,14 +54,14 @@ include('config/dbcon.php');
                   foreach ($query_run as $row) {
               ?>
               <div class="form-group">
-                      <label for="username">Username</label>
-                      <input type="text" name="id" value="<?php echo $row['id'] ?>" class="form-control">
+                      <label for="username">Id</label>
+                      <input type="text" name="id" value="<?php echo $row['id'] ?>" class="form-control" disabled="disabled" >
 
                       <!-- <input type="text" id="username" name="username" value="<?php echo $row['username'] ?>" class="form-control" placeholder="Enter Username" required> -->
                     </div>
                     <div class="form-group">
                       <label for="name">Name</label>
-                      <input type="text" id="name" name="name" value="<?php echo $row['name'] ?>" class="form-control" placeholder="Enter Name" required>
+                      <input type="text" id="name" name="name" value="<?php echo $row['name'] ?>" class="form-control" placeholder="Enter Name" required >
                     </div>
 
 
@@ -82,7 +82,7 @@ include('config/dbcon.php');
 
                     <div class="form-group">
                       <label for="password">Password</label>
-                      <input type="text" id="password" name="password" value="<?php echo isset($row['password']) ? $row['password'] : ''; ?>" class="form-control" placeholder="Enter Password" required>
+                      <input type="text" id="password" name="password" value="<?php echo isset($row['password']) ? $row['password'] : ''; ?>" class="form-control" placeholder="Enter Password" required disabled="disabled" >
                     </div>
 
                     <div class="form-group">
