@@ -116,9 +116,11 @@
                                     <input type="password" name="password" value="" size="20" id="password" placeholder="Enter your password" class="form-control" required="" autocomplete="nop" />
                                 </div>
                             </div>
+                            
                             <div class="d-grid">
                                 <button type="submit" id="registerButton" class="btn btn-block btn-purple" style="margin-top:2em; background-color:blueviolet;color:white">Get Started Now <img src="assets/img/right-arrow.png" alt="Right Arrow"></button>
                             </div>
+                            
                         </form>
                     </td>
                 </tr>

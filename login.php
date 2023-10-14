@@ -68,6 +68,7 @@
                                     <li class="breadcrumb-item active">Sign Up</li>
                                     <li style="color: blueviolet;" class="breadcrumb-item"><a href="index.php">Home</a></li>
                                 </ol>
+                                
                                 <p style="margin-bottom: 25px; font-size: 14.5px" class="text-muted">Welcome back! 🌟 Ready to take charge of your business? Log in to your portal and seize the day.</p>
                                 <div class="form-group">
                                     <label for="username" class="form-label">Username </label>
@@ -153,7 +154,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
                     }).then(function(result) {
                         if (result.isConfirmed) {
                             // Redirect to admin page
-                            window.location.href = "admin/index.php";
+                            window.location.href = "admin";
                         }
                     });
                 } else {
@@ -167,7 +168,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
                     }).then(function(result) {
                         if (result.isConfirmed) {
                             // Redirect to user page
-                            window.location.href = "admin/user.php";
+                            window.location.href = "user";
                         }
                     });
                 }
@@ -179,7 +180,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
                     confirmButtonText: "OK"
                 }).then(function() {
                     // Redirect to user page
-                    window.location.href = "admin/user.php";
+                    window.location.href = "user";
                 });
             }
         } else {

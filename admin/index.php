@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-// Check if the user is not logged in
-if (!isset($_SESSION['user_id'])) {
+// Check if the user is not logged in or not an admin
+if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'admin') {
     header("Location: /house-hunting/login.php");
     exit();
 }
@@ -23,7 +23,7 @@ include('includes/sidebar.php');
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Cosy Homes</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

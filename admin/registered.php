@@ -37,8 +37,36 @@ include('config/dbcon.php');
 
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" required>
+                <div style="color: red;" id="email-availability-status"></div> <!-- This will display the result of email availability with an icon -->
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" required onkeyup="checkEmailAvailability()">
               </div>
+
+
+              <script>
+                function checkEmailAvailability() {
+                  let email = document.getElementById('email').value;
+                  let emailStatusElement = document.getElementById('email-availability-status');
+
+                  // Send AJAX request to the server
+                  let xhr = new XMLHttpRequest();
+                  xhr.open('POST', 'check_email.php', true);
+                  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                  xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                      let response = xhr.responseText;
+
+                      // Update the email availability status and icon
+                      if (response.includes("Email is already in use")) {
+                        emailStatusElement.innerHTML = '<i class="fas fa-times-circle" style="color: red;"></i> ' + response;
+                      } else {
+                        emailStatusElement.innerHTML = '<i class="fas fa-check-circle" style="color: green;"></i> ' + response;
+                      }
+                    }
+                  };
+                  xhr.send('email=' + email);
+                }
+              </script>
+
 
               <div class="form-group">
                 <label for="phone">Phone Number</label>
@@ -89,6 +117,31 @@ include('config/dbcon.php');
       </div>
     </div>
   </div>
+
+  <!-- Delete Modal -->
+
+  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form action="deleteuser.php" method="POST">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="deleteModalLabel">Delete User</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="text-danger">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" name="delete_user_id" id="delete_user_id">
+            <h4>Are you sure, you want to delete this user?</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">No, Go Back</button>
+            <button type="submit" name="delete_user_btn" class="btn btn-danger">Yes, Delete</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
   <!-- Content Header (Page header) -->
   <div class="content-header">
     <div class="container-fluid">
@@ -113,23 +166,26 @@ include('config/dbcon.php');
       <div class="col-md-12">
         <?php
         if (isset($_SESSION['status'])) {
-          $alertClass = strpos($_SESSION['status'], 'Successfully') !== false ? "success" : "error";
-          $icon = $alertClass === "success" ? "success" : "error";
+          $alertClass = ($_SESSION['alert'] === "success") ? "success" : "error";
+          $iconClass = ($_SESSION['alert'] === "success") ? "fas fa-check-circle" : "fas fa-times-circle";
 
           echo '<script>
-        Swal.fire({
-            icon: "' . $icon . '",
-            title: "' . $_SESSION['status'] . '",
-            showConfirmButton: true,
-            timer: 5000
-        }).then(function() {
-            window.location.href = "registered.php";
-        });
-      </script>';
+    Swal.fire({
+        icon: "' . $alertClass . '",
+        title: "' . $_SESSION['status'] . '",
+        showConfirmButton: true,
+        timer: 5000,
+        iconHtml: \'<i class="' . $iconClass . '"></i>\'
+    }).then(function() {
+        window.location.href = "registered.php";
+    });
+    </script>';
 
           unset($_SESSION['status']);
+          unset($_SESSION['alert']);
         }
         ?>
+
 
 
 
@@ -180,7 +236,7 @@ include('config/dbcon.php');
                       </td>
                       <td>
                         <a href="registered-edit.php?user_id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i></a>
-                        <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+                        <button type="button" value="<?php echo $row['id']; ?>" class="btn btn-sm btn-danger deletebtn"><i class="fas fa-trash-alt"></i></button>
                       </td>
 
                     </tr>
@@ -221,6 +277,39 @@ include('config/dbcon.php');
     </div>
   </div>
 </div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('.deletebtn').click(function(e) {
+      e.preventDefault();
+
+      var user_id = $(this).val();
+
+      $('#delete_user_id').val(user_id);
+      $('#deleteModal').modal('show');
+    })
+
+  });
+</script>
+
+<!-- Your other scripts -->
+<!-- <script>
+$(document).ready(function () {
+    $(document).on('click', '.deletebtn', function () {
+        var user_id = $(this).val();
+        console.log('Delete button clicked for user ID:', user_id);
+    });
+
+    $(document).on('click', '.editbtn', function () {
+        var user_id = $(this).val();
+        console.log('Edit button clicked for user ID:', user_id);
+    });
+});
+
+</script> -->
 
 <?php
 include('includes/footer.php');

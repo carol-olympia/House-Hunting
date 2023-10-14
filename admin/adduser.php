@@ -11,23 +11,36 @@ if (isset($_POST['submit'])) {
     $status = $_POST['status'];
     $password = $_POST['password'];
 
-    // Check if passwords match
-    if ($password) {
-        // Hash the password for secure storage
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    // Check if email is already in use
+    $email_check_query = "SELECT * FROM users WHERE email='$email' LIMIT 1";
+    $result = mysqli_query($conn, $email_check_query);
+    $user = mysqli_fetch_assoc($result);
 
-        // Your SQL query, including the new password field
-        $query = "INSERT INTO users (name, username, email, phone, role, status, password) VALUES ('$name','$username','$email','$phone','$role','$status','$hashed_password')";
+    if ($user) {
+        $_SESSION['status'] = "Email is already in use";
+        $_SESSION['alert'] = "error";
+        header("location: registered.php");
+        exit();
+    }
 
-        $user_query_num = mysqli_query($conn, $query);
+    // Hash the password for secure storage
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-        if ($user_query_num) {
-            $_SESSION['status'] = "User Added Successfully";
-            header("location: registered.php");
-        } else {
-            $_SESSION['status'] = "User Was Not Added";
-            header("location: registered.php");
-        }
+    // Your SQL query, including the hashed password
+    $query = "INSERT INTO users (name, username, email, phone, role, status, password) VALUES ('$name','$username','$email','$phone','$role','$status','$hashed_password')";
+
+    $user_query_num = mysqli_query($conn, $query);
+
+    if ($user_query_num) {
+        $_SESSION['status'] = "User Added Successfully";
+        $_SESSION['alert'] = "success";
+        header("location: registered.php");
+        exit();
+    } else {
+        $_SESSION['status'] = "Failed to add user: " . mysqli_error($conn);
+        $_SESSION['alert'] = "error";
+        header("location: registered.php");
+        exit();
     }
 }
 
@@ -42,18 +55,32 @@ if(isset($_POST['updateuser']))
     $status = $_POST['status'];
     $password = $_POST['password'];
 
-    $query = "UPDATE users SET name='$name', username='$username', email='$email', phone='$phone', role='$role', status='$status', password='$password' WHERE id='$user_id' ";
+    // If a new password is provided, hash it
+    $hashed_password = $password ? password_hash($password, PASSWORD_DEFAULT) : null;
+
+    $query = "UPDATE users SET name='$name', username='$username', email='$email', phone='$phone', role='$role', status='$status'";
+
+    if ($hashed_password) {
+        $query .= ", password='$hashed_password'";
+    }
+
+    $query .= " WHERE id='$user_id' ";
+
     $query_run = mysqli_query($conn, $query);
 
     if($query_run)
     {
         $_SESSION['status'] = "User Updated Successfully";
+        $_SESSION['alert'] = "success";
         header("Location: registered.php");
+        exit();
     }
     else
     {
-        $_SESSION['status'] = "User Not Updated";
+        $_SESSION['status'] = "Failed to update user: " . mysqli_error($conn);
+        $_SESSION['alert'] = "error";
         header("Location: registered.php");
+        exit();
     }
 }
 ?>

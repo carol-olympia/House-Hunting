@@ -42,7 +42,7 @@ include('config/dbcon.php');
         <!-- /.card -->
         <div class="card-body">
           <div class="col-md-6">
-            <form action="adduser.php" method="POST" class="two-column-form">
+          <form action="adduser.php" method="POST" class="two-column-form">
               <?php
               if (isset($_GET['user_id'])) {
                 $user_id = $_GET['user_id'];
@@ -55,7 +55,7 @@ include('config/dbcon.php');
               ?>
               <div class="form-group">
                       <label for="username">Id</label>
-                      <input type="text" name="id" value="<?php echo $row['id'] ?>" class="form-control" disabled="disabled" >
+                      <input type="text" name="id" value="<?php echo $row['id'] ?>" class="form-control" >
 
                       <!-- <input type="text" id="username" name="username" value="<?php echo $row['username'] ?>" class="form-control" placeholder="Enter Username" required> -->
                     </div>
@@ -104,7 +104,8 @@ include('config/dbcon.php');
                 }
               }
               $user_id = $_GET['user_id'];
-              $query = "SELECT * FROM users WHERE id = 'user_id'";
+              $query = "SELECT * FROM users WHERE id = '$user_id'";
+
     ?>
 
     <style>

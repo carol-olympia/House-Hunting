@@ -46,7 +46,7 @@
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+    <nav style="background-color: white!important; height:70px!important" class="navbar navbar-expand-lg bg-light shadow-lg">
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <img src="assets/img/Real Estate Logo.png" class="logo img-fluid" alt="Kind Heart Charity">
