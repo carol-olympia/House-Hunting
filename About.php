@@ -46,7 +46,7 @@ include 'include/header.php';
             </div>
             <div class="col-lg-6">
                 <div class="text-center">
-                    <img src="assets/img/banner.jpeg" alt="House Image" class="img-fluid">
+                    <img src="img/about-as-service-contact-information-concept.jpg" alt="House Image" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@ include 'include/header.php';
         <div class="row">
             <div class="col-lg-6">
                 <div class="text-center">
-                    <img src="assets/img/maxresdefault.jpg" alt="House Image" class="img-fluid">
+                    <img src="img/carousel-2.jpg" alt="who we are Image" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-6">
