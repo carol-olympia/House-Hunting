@@ -26,6 +26,7 @@ include 'include/header.php';
 
     <link href="assets/css/footer.css" rel="stylesheet">
 
+
 </head>
 
 
@@ -35,7 +36,7 @@ include 'include/header.php';
         <div class="row">
             <div class="col-lg-6">
                 <div class="text-center">
-                    <h2 class="text-secondary mb-4" style="color:purple!important;">About Us</h2>
+                    <h2 class="text-secondary mb-7" style="color:blue!important;">About Us</h2>
                 </div>
                 <p>
                     Welcome to House Hunt, your trusted platform for finding the perfect property. We strive to provide exceptional service and assist you in every step of your real estate journey.<br>
@@ -59,12 +60,12 @@ include 'include/header.php';
         <div class="row">
             <div class="col-lg-6">
                 <div class="text-center">
-                    <img src="img/carousel-2.jpg" alt="who we are Image" class="img-fluid">
+                    <img src="img/we arepic.jpg" alt="who we are Image" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="text-center">
-                    <h2 class="text-secondary mb-4">Who We Are </h2>
+                    <h2 class="text-secondary mb-7" style="color:blue!important;">Who We Are </h2>
                     <p>
 
 
@@ -89,7 +90,7 @@ include 'include/header.php';
 
     <div class="container">
 
-        <div class="row gy-5">
+        <div class="row gy-6">
 
             <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
@@ -119,7 +120,7 @@ include 'include/header.php';
                     </div>
                 </div>
                 <div class="member-info text-center">
-                    <h4>Carol Njenga</h4>
+                    <h4>Ivana Makena</h4>
                     <span>Product Manager</span>
                     <p>Responsible for product planning, delivery and marketing throughout the website lifecycle</p>
                 </div>

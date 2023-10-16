@@ -1,5 +1,6 @@
         .about-us {
-            background-color: white;
+            background-color: grey;
+            
             padding: 40px;
         }
 
@@ -17,7 +18,7 @@
         }
 /* second image */
         .custom-section {
-            background-color: white;
+            background-color: grey;
             padding: 40px;
         }
 
@@ -38,6 +39,7 @@
 section {
   color: var(--default-color);
   background-color: var(--background-color);
+
   padding: 60px 0;
   overflow: clip;
 }
@@ -71,7 +73,7 @@ section {
 /* Team Section - Home Page
 ------------------------------*/
 .team {
-  --background-color: #f4f4f4;
+  --background-color: grey;  
 }
 
 .team .member {
@@ -98,7 +100,7 @@ section {
 .team .member .member-img .social {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
