@@ -207,14 +207,14 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                    <a href=""><img class="img-fluid" src="img/mall.jpg" alt=""></a>
                                     <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sale</div>
-                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Office</div>
+                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Mall</div>
                                 </div>
                                 <div class="p-4 pb-0">
                                     <h5 class="text-primary mb-3">Ksh50,345</h5>
                                     <a class="d-block h5 mb-2" href="https://www.google.com/maps/search/karen/@-1.3170728,36.6158834,12z/data=!3m1!4b1?entry=ttu">Modern office</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>medern Street, karen Kenya</p>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>modern Street, karen Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>100 Sqft</small>
@@ -226,18 +226,18 @@
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
                                     <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
-                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Building</div>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Rental</div>
+                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Home</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh1,600,000</h5>
+                                    <a class="d-block h5 mb-2" href="https://www.google.com/maps/place/Runda+Suites/@-1.213819,36.8021271,17z/data=!3m1!4b1!4m9!3m8!1s0x182f3d674a572709:0xc5157eaaa0fa6f4!5m2!4m1!1i2!8m2!3d-1.213819!4d36.804702!16s%2Fg%2F11c58sfzcx?entry=ttu"> House For Sale</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Runda suites, Nairobi Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>4 Bed</small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>6 Bath</small>
                                 </div>
                             </div>
                         </div>
@@ -245,13 +245,13 @@
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
                                     <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For sale</div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Home</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh1,400,000</h5>
+                                    <a class="d-block h5 mb-2" href="https://www.google.com/maps/place/Runda+Suites/@-1.213819,36.8021271,17z/data=!3m1!4b1!4m9!3m8!1s0x182f3d674a572709:0xc5157eaaa0fa6f4!5m2!4m1!1i2!8m2!3d-1.213819!4d36.804702!16s%2Fg%2F11c58sfzcx?entry=ttu">House For sale</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Runda suites, Nairobi Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
@@ -263,19 +263,18 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                    <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Rental</div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Shop</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh12,340</h5>
+                                    <a class="d-block h5 mb-2" href="">To Rent</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Galot estate, Nairobi Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>100 Sqft</small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>1 washroom</small>
                                 </div>
                             </div>
                         </div>
@@ -289,18 +288,18 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                    <a href=""><img class="img-fluid" src="img/aoartment 2.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Rental</div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Appartment</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh120,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh40,000</h5>
+                                    <a class="d-block h5 mb-2" href="">House to rent</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Kiambu ,Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
                                     <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
                                 </div>
                             </div>
@@ -308,56 +307,55 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                    <a href=""><img class="img-fluid" src="img/villa.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">To Rent</div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Villa</div>
                                 </div>
                                 <div class="p-4 pb-0">
                                     <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <a class="d-block h5 mb-2" href="">Villa to rent</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Mombasa, Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>6 Bed</small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>9 Bath</small>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                    <a href=""><img class="img-fluid" src="img/office 2.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For sale</div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Office</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh 100,000</h5>
+                                    <a class="d-block h5 mb-2" href="">For Sale</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Parklands, Nairobi Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>100 Sqft</small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                    <a href=""><img class="img-fluid" src="img/apartment 1.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sale</div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Building</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh2,500,000</h5>
+                                    <a class="d-block h5 mb-2" href="">For Sell</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Kiambu town, Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>2 Bedroom</small>
                                     <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
                                 </div>
                             </div>
@@ -366,13 +364,13 @@
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
                                     <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For sale</div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Home</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh1,000,000</h5>
+                                    <a class="d-block h5 mb-2" href="">For Sale</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Nairobi, Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
@@ -385,18 +383,18 @@
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
                                     <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
-                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Shop</div>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Rental</div>
+                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">House</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh150,000</h5>
+                                    <a class="d-block h5 mb-2" href="">To rent</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Nairobi, Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>4 Bed</small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>5 Bath</small>
                                 </div>
                             </div>
                         </div>
@@ -410,90 +408,33 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
-                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Appartment</div>
-                                </div>
-                                <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="property-item rounded overflow-hidden">
-                                <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
-                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Villa</div>
-                                </div>
-                                <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="property-item rounded overflow-hidden">
-                                <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
-                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Office</div>
-                                </div>
-                                <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="property-item rounded overflow-hidden">
-                                <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
-                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Building</div>
-                                </div>
-                                <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="property-item rounded overflow-hidden">
-                                <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                    <a href=""><img class="img-fluid" src="img/cosymodern.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For sale</div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Home</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh 2,500,000</h5>
+                                    <a class="d-block h5 mb-2" href="">For sale</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Nairobi, Kenya</p>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>3 Bath</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-item rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <a href=""><img class="img-fluid" src="img/Villavilla.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Rental</div>
+                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Villa</div>
+                                </div>
+                                <div class="p-4 pb-0">
+                                    <h5 class="text-primary mb-3">Ksh250,000</h5>
+                                    <a class="d-block h5 mb-2" href="">To rent</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Mombasa, Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
@@ -505,19 +446,74 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
-                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Shop</div>
+                                    <a href=""><img class="img-fluid" src="img/office3.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Rental</div>
+                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Office</div>
                                 </div>
                                 <div class="p-4 pb-0">
-                                    <h5 class="text-primary mb-3">Ksh12,345</h5>
-                                    <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
-                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Nairobi, Kenya</p>
+                                    <h5 class="text-primary mb-3">Ksh12,000</h5>
+                                    <a class="d-block h5 mb-2" href="">Rental</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Nanyuki, Kenya</p>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>1 washroom</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-item rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <a href=""><img class="img-fluid" src="img/modernvilla.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Rental</div>
+                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Home</div>
+                                </div>
+                                <div class="p-4 pb-0">
+                                    <h5 class="text-primary mb-3">Ksh50,000</h5>
+                                    <a class="d-block h5 mb-2" href="">To rent</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Mombasa, Kenya</p>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
                                     <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
                                     <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-item rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <a href=""><img class="img-fluid" src="img/countrysidehouse.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Sale</div>
+                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Home</div>
+                                </div>
+                                <div class="p-4 pb-0">
+                                    <h5 class="text-primary mb-3">Ksh3,000,000</h5>
+                                    <a class="d-block h5 mb-2" href="">For Sale</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Machakos, Kenya</p>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-item rounded overflow-hidden">
+                                <div class="position-relative overflow-hidden">
+                                    <a href=""><img class="img-fluid" src="img/manyppleoffice.jpg" alt=""></a>
+                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Rental</div>
+                                    <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Office</div>
+                                </div>
+                                <div class="p-4 pb-0">
+                                    <h5 class="text-primary mb-3">Ksh12,000</h5>
+                                    <a class="d-block h5 mb-2" href="">T0 rent</a>
+                                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Kisumu, Kenya</p>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>100 Sqft</small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>1 washroom</small>
                                 </div>
                             </div>
                         </div>
@@ -531,113 +527,6 @@
     </div>
     <!-- Property List End -->
 
-
-    <!--	Recent Properties  -->
-    <div class="full-row">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-secondary double-down-line text-center mb-4">Recent Property</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Centered Column -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="featured-thumb hover-zoomer mb-4">
-                        <div class="overlay-black overflow-hidden position-relative">
-                            <img src="assets\img\h1.jpg" alt="pimage">
-                            <div style="background-color: blue!important" class="featured bg-success text-white">New</div>
-                            <div style="background-color: blue!important" class="sale bg-success text-white text-capitalize">For sale</div>
-                            <div style="z-index: 0;" class="price text-primary"><b style="color: yellow;">ksh2,500,000</b><span class="text-white">1869 Sqft</span></div>
-                        </div>
-                        <div class="featured-thumb-data shadow-one">
-                            <div class="p-3">
-                                <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php" style="text-decoration: none;">Fedha Estate</a></h5>
-                                <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> 39 Nairobi Fedha</span>
-                            </div>
-                            <div style="background-color: blueviolet;" class="bg-gray quantity px-4 pt-4">
-                                <ul>
-                                    <li><span>1869</span> Sqft</li>
-                                    <li><span>4</span> Beds</li>
-                                    <li><span>2</span> Baths</li>
-                                    <li><span>1</span> Kitchen</li>
-                                    <li><span>1</span> Balcony</li>
-                                </ul>
-                            </div>
-                            <div class="p-4 d-inline-block w-100">
-                                <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : Declan Mark</div>
-                                <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> 22-10-2023</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- New Center Column -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="featured-thumb hover-zoomer mb-4">
-                        <div class="overlay-black overflow-hidden position-relative">
-                            <img src="assets/img/Kenyan-House-2.webp" alt="pimage">
-                            <div style="background-color: blue!important" class="featured bg-success text-white">New</div>
-                            <div style="background-color: blue!important" class="sale bg-success text-white text-capitalize">For sale</div>
-                            <div style="z-index: 0;" class="price text-primary"><b style="color: yellow;">ksh910,000 </b><span class="text-white">1500 Sqft</span></div>
-                        </div>
-                        <div class="featured-thumb-data shadow-one">
-                            <div class="p-3">
-                                <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php" style="text-decoration: none;">Konza Street</a></h5>
-                                <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> 34 Konza City</span>
-                            </div>
-                            <div style="background-color: blueviolet;" class="bg-gray quantity px-4 pt-4">
-                                <ul>
-                                    <li><span>2500</span> Sqft</li>
-                                    <li><span>3</span> Beds</li>
-                                    <li><span>2</span> Baths</li>
-                                    <li><span>1</span> Kitchen</li>
-                                    <li><span>2</span> Balcony</li>
-                                </ul>
-                            </div>
-                            <div class="p-4 d-inline-block w-100">
-                                <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : Caroline Eliana</div>
-                                <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> 12-10-2023</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="featured-thumb hover-zoomer mb-4">
-                        <!-- Content for the right column -->
-                        <div class="overlay-black overflow-hidden position-relative">
-                            <img style="height: 200px;" src="assets/img/h.jpg" alt="pimage">
-                            <div style="background-color: blue!important" class="featured bg-success text-white">New</div>
-                            <div style="background-color: blue!important" class="sale bg-success text-white text-capitalize">For sale</div>
-                            <div style="z-index: 0;" class="price text-primary"><b style="color: yellow;">ksh2,000,000 </b><span class="text-white">1500 Sqft</span></div>
-                        </div>
-                        <div class="featured-thumb-data shadow-one">
-                            <div class="p-3">
-                                <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php" style="text-decoration: none;">Malili Apartments</a></h5>
-                                <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> Malili Town</span>
-                            </div>
-                            <div style="background-color: blueviolet;" class="bg-gray quantity px-4 pt-4">
-                                <ul>
-                                    <li><span>1500</span> Sqft</li>
-                                    <li><span>2</span> Beds</li>
-                                    <li><span>1</span> Baths</li>
-                                    <li><span>1</span> Kitchen</li>
-                                    <li><span>1</span> Balcony</li>
-                                </ul>
-                            </div>
-                            <div class="p-4 d-inline-block w-100">
-                                <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : Liam Kt</div>
-                                <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> 25-9-2023</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- How It Work -->
     <div class="full-row">
         <div class="container">
@@ -647,7 +536,7 @@
                 </div>
             </div>
             <div class="row">
-                <div style="color: blueviolet;" class="col-md-4">
+                <div style="color: blue;" class="col-md-4">
                     <div class="icon-thumb-one text-center mb-5" style="position: relative;">
                         <div class="bg-success text-white rounded-circle position-absolute z-index-9" style="left: 50%; transform: translateX(-50%); top: 50%; margin-top: -140px; margin-left:-40px">1</div>
                         <div class="left-arrow"><i class="fas fa-user flat-medium icon-success" aria-hidden="true" style="font-size: 40px;"></i></div>
@@ -655,7 +544,7 @@
                         <p>Engage in conversations about selling houses, exchanging ideas, and exploring sales opportunities.</p>
                     </div>
                 </div>
-                <div style="color: blueviolet;" class="col-md-4">
+                <div style="color: blue;" class="col-md-4">
                     <div class="icon-thumb-one text-center mb-5" style="position: relative;">
                         <div class="bg-success text-white rounded-circle position-absolute z-index-9" style="left: 50%; transform: translateX(-50%); top: 50%; margin-top: -140px; margin-left:-40px">2</div>
                         <div class="left-arrow"><i class="fas fa-search flat-medium icon-success" aria-hidden="true" style="font-size: 40px;"></i></div>
@@ -664,7 +553,7 @@
                     </div>
                 </div>
 
-                <div style="color: blueviolet;" class="col-md-4">
+                <div style="color: blue;" class="col-md-4">
                     <div class="icon-thumb-one text-center mb-5" style="position: relative;">
                         <div class="bg-success text-white rounded-circle position-absolute z-index-9" style="left: 50%; transform: translateX(-50%); top: 50%; margin-top: -140px; margin-left:-40px">3</div>
                         <div><i class="fas fa-handshake flat-medium icon-success" aria-hidden="true" style="font-size: 40px;"></i></div>
